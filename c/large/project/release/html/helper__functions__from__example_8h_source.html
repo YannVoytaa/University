@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Polynomials: Plik źródłowy helper_functions_from_example.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Polynomials
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c6fe1d3fbb7aaa54faf42e7f9c1260d3.html">testy-duze-zadanie-1</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">helper_functions_from_example.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../poly.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define C PolyFromCoeff</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<a class="code" href="structMono.html">Mono</a> M(<a class="code" href="structPoly.html">Poly</a> p, <a class="code" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a> n);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<a class="code" href="structPoly.html">Poly</a> MakePolyHelper(<a class="code" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a> dummy, ...);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define P(...) MakePolyHelper(0, __VA_ARGS__, PolyZero(), -1)</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">bool</span> TestOp(<a class="code" href="structPoly.html">Poly</a> a, <a class="code" href="structPoly.html">Poly</a> b, <a class="code" href="structPoly.html">Poly</a> res,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <a class="code" href="structPoly.html">Poly</a> (*op)(<span class="keyword">const</span> <a class="code" href="structPoly.html">Poly</a> *, <span class="keyword">const</span> <a class="code" href="structPoly.html">Poly</a> *));</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">bool</span> TestAdd(<a class="code" href="structPoly.html">Poly</a> a, <a class="code" href="structPoly.html">Poly</a> b, <a class="code" href="structPoly.html">Poly</a> res);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">bool</span> TestAddMonos(<span class="keywordtype">size_t</span> count, <a class="code" href="structMono.html">Mono</a> monos[], <a class="code" href="structPoly.html">Poly</a> res);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">bool</span> TestMul(<a class="code" href="structPoly.html">Poly</a> a, <a class="code" href="structPoly.html">Poly</a> b, <a class="code" href="structPoly.html">Poly</a> res);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">bool</span> TestSub(<a class="code" href="structPoly.html">Poly</a> a, <a class="code" href="structPoly.html">Poly</a> b, <a class="code" href="structPoly.html">Poly</a> res);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">bool</span> TestDegBy(<a class="code" href="structPoly.html">Poly</a> a, <span class="keywordtype">size_t</span> var_idx, <a class="code" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a> res);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">bool</span> TestDeg(<a class="code" href="structPoly.html">Poly</a> a, <a class="code" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a> res);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">bool</span> TestEq(<a class="code" href="structPoly.html">Poly</a> a, <a class="code" href="structPoly.html">Poly</a> b, <span class="keywordtype">bool</span> res);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">bool</span> TestAt(<a class="code" href="structPoly.html">Poly</a> a, <a class="code" href="poly_8h.html#a912dfe9f745aee73326baa53126fd650">poly_coeff_t</a> x, <a class="code" href="structPoly.html">Poly</a> res);</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="apoly_8c_html_aa9a13ecbdb28cf16c699c27290a7c56c"><div class="ttname"><a href="poly_8c.html#aa9a13ecbdb28cf16c699c27290a7c56c">PolyAddMonos</a></div><div class="ttdeci">Poly PolyAddMonos(size_t count, const Mono monos[])</div><div class="ttdoc">Sumuje listę jednomianów i tworzy z nich wielomian.</div><div class="ttdef"><b>Definition:</b> poly.c:188</div></div>
+<div class="ttc" id="apoly_8c_html_a54faf738d9aa518d1e1d6db6c3142e3f"><div class="ttname"><a href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a></div><div class="ttdeci">void PolyDestroy(Poly *p)</div><div class="ttdoc">Usuwa wielomian z pamięci.</div><div class="ttdef"><b>Definition:</b> poly.c:11</div></div>
+<div class="ttc" id="astructPoly_html"><div class="ttname"><a href="structPoly.html">Poly</a></div><div class="ttdoc">To jest struktura przechowująca wielomian.</div><div class="ttdef"><b>Definition:</b> poly.h:29</div></div>
+<div class="ttc" id="apoly_8h_html_a8aeff364e4fc97a215cfe70e36e14c14"><div class="ttname"><a href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a></div><div class="ttdeci">int poly_exp_t</div><div class="ttdoc">To jest typ reprezentujący wykładniki.</div><div class="ttdef"><b>Definition:</b> poly.h:20</div></div>
+<div class="ttc" id="apoly_8h_html_ab3c9ee0f74dabe5ce9d64a6915566eeb"><div class="ttname"><a href="poly_8h.html#ab3c9ee0f74dabe5ce9d64a6915566eeb">MonoFromPoly</a></div><div class="ttdeci">static Mono MonoFromPoly(const Poly *p, poly_exp_t n)</div><div class="ttdoc">Tworzy jednomian .</div><div class="ttdef"><b>Definition:</b> poly.h:90</div></div>
+<div class="ttc" id="apoly_8h_html_a912dfe9f745aee73326baa53126fd650"><div class="ttname"><a href="poly_8h.html#a912dfe9f745aee73326baa53126fd650">poly_coeff_t</a></div><div class="ttdeci">long poly_coeff_t</div><div class="ttdoc">To jest typ reprezentujący współczynniki.</div><div class="ttdef"><b>Definition:</b> poly.h:17</div></div>
+<div class="ttc" id="astructVector_html_a1d97bfc49c829ce5f02c6066d1628619"><div class="ttname"><a href="structVector.html#a1d97bfc49c829ce5f02c6066d1628619">Vector::arr</a></div><div class="ttdeci">Mono * arr</div><div class="ttdoc">Tablica jednomianów.</div><div class="ttdef"><b>Definition:</b> Vector.h:19</div></div>
+<div class="ttc" id="apoly_8c_html_a22d1e18efcb1373fe1f0fae77856f488"><div class="ttname"><a href="poly_8c.html#a22d1e18efcb1373fe1f0fae77856f488">PolyAt</a></div><div class="ttdeci">Poly PolyAt(const Poly *p, poly_coeff_t x)</div><div class="ttdoc">Wylicza wartość wielomianu w punkcie x.</div><div class="ttdef"><b>Definition:</b> poly.c:333</div></div>
+<div class="ttc" id="apoly_8c_html_af1d3ea4ed1d054d9fbc4f715bbc64544"><div class="ttname"><a href="poly_8c.html#af1d3ea4ed1d054d9fbc4f715bbc64544">PolyDegBy</a></div><div class="ttdeci">poly_exp_t PolyDegBy(const Poly *p, size_t var_idx)</div><div class="ttdoc">Zwraca stopień wielomianu ze względu na zadaną zmienną (-1 dla wielomianu tożsamościowo równego zeru)...</div><div class="ttdef"><b>Definition:</b> poly.c:266</div></div>
+<div class="ttc" id="apoly_8c_html_a10020aea410f5a07374537dbb431d1fe"><div class="ttname"><a href="poly_8c.html#a10020aea410f5a07374537dbb431d1fe">PolyDeg</a></div><div class="ttdeci">poly_exp_t PolyDeg(const Poly *p)</div><div class="ttdoc">Zwraca stopień wielomianu (-1 dla wielomianu tożsamościowo równego zeru).</div><div class="ttdef"><b>Definition:</b> poly.c:289</div></div>
+<div class="ttc" id="apoly_8h_html_a215004f717bcebc9b4e95d20f01f116b"><div class="ttname"><a href="poly_8h.html#a215004f717bcebc9b4e95d20f01f116b">MonoGetExp</a></div><div class="ttdeci">static poly_exp_t MonoGetExp(const Mono *m)</div><div class="ttdoc">Daje wartość wykładnika jendomianu.</div><div class="ttdef"><b>Definition:</b> poly.h:60</div></div>
+<div class="ttc" id="apoly_8c_html_abd180157f87e1da3669356026bbddc5e"><div class="ttname"><a href="poly_8c.html#abd180157f87e1da3669356026bbddc5e">PolySub</a></div><div class="ttdeci">Poly PolySub(const Poly *p, const Poly *q)</div><div class="ttdoc">Odejmuje wielomian od wielomianu.</div><div class="ttdef"><b>Definition:</b> poly.c:251</div></div>
+<div class="ttc" id="apoly_8c_html_afd55434759a46901958eb5ad79b78217"><div class="ttname"><a href="poly_8c.html#afd55434759a46901958eb5ad79b78217">PolyAdd</a></div><div class="ttdeci">Poly PolyAdd(const Poly *p, const Poly *q)</div><div class="ttdoc">Dodaje dwa wielomiany.</div><div class="ttdef"><b>Definition:</b> poly.c:170</div></div>
+<div class="ttc" id="apoly_8c_html_a1183de0891f01c491dca485e284a1e6c"><div class="ttname"><a href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a></div><div class="ttdeci">bool PolyIsEq(const Poly *p, const Poly *q)</div><div class="ttdoc">Sprawdza równość dwóch wielomianów.</div><div class="ttdef"><b>Definition:</b> poly.c:302</div></div>
+<div class="ttc" id="astructMono_html"><div class="ttname"><a href="structMono.html">Mono</a></div><div class="ttdoc">To jest struktura przechowująca jednomian.</div><div class="ttdef"><b>Definition:</b> poly.h:50</div></div>
+<div class="ttc" id="apoly_8c_html_a6e066ef82f4d7611d7276a6adc8e47ac"><div class="ttname"><a href="poly_8c.html#a6e066ef82f4d7611d7276a6adc8e47ac">PolyMul</a></div><div class="ttdeci">Poly PolyMul(const Poly *p, const Poly *q)</div><div class="ttdoc">Mnoży dwa wielomiany.</div><div class="ttdef"><b>Definition:</b> poly.c:221</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pt, 21 maj 2021 23:01:16 dla Polynomials programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

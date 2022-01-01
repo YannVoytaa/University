@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yannvoytaa/duze/IPP-jw429685/src/CalcFunctions.h
+
+/home/yannvoytaa/duze/IPP-jw429685/src/Stack.h
+Stack.h
+/home/yannvoytaa/duze/IPP-jw429685/src/Stack.h
+poly.h
+/home/yannvoytaa/duze/IPP-jw429685/src/poly.h
+
+/home/yannvoytaa/duze/IPP-jw429685/src/Vector.h
+poly.h
+/home/yannvoytaa/duze/IPP-jw429685/src/poly.h
+
+/home/yannvoytaa/duze/IPP-jw429685/src/calc.c
+errno.h
+-
+stdio.h
+-
+string.h
+-
+expat.h
+-
+poly.h
+/home/yannvoytaa/duze/IPP-jw429685/src/poly.h
+Stack.h
+/home/yannvoytaa/duze/IPP-jw429685/src/Stack.h
+Vector.h
+/home/yannvoytaa/duze/IPP-jw429685/src/Vector.h
+CalcFunctions.h
+/home/yannvoytaa/duze/IPP-jw429685/src/CalcFunctions.h
+
+/home/yannvoytaa/duze/IPP-jw429685/src/poly.h
+assert.h
+-
+stdbool.h
+-
+stddef.h
+-
+

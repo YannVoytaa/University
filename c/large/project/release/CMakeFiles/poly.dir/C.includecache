@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yannvoytaa/duze/IPP-jw429685/src/Vector.h
+poly.h
+/home/yannvoytaa/duze/IPP-jw429685/src/poly.h
+
+/home/yannvoytaa/duze/IPP-jw429685/src/poly.c
+poly.h
+/home/yannvoytaa/duze/IPP-jw429685/src/poly.h
+stdio.h
+-
+stdlib.h
+-
+Vector.h
+/home/yannvoytaa/duze/IPP-jw429685/src/Vector.h
+
+/home/yannvoytaa/duze/IPP-jw429685/src/poly.h
+assert.h
+-
+stdbool.h
+-
+stddef.h
+-
+

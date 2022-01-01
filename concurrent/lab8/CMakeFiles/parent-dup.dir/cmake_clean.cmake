@@ -1,0 +1,10 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/parent-dup.dir/parent-dup.c.o"
+  "parent-dup"
+  "parent-dup.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/parent-dup.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

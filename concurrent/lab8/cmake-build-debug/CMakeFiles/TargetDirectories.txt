@@ -1,0 +1,13 @@
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/install/local.dir
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/install.dir
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/myPipe.dir
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/parent-fifo.dir
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/child-fifo.dir
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/parent-dup.dir
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/parent-pipe.dir
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/child-pipe.dir
+/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug/CMakeFiles/err.dir

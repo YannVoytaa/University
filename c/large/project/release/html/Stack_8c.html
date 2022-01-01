@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Polynomials: Dokumentacja pliku Stack.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Polynomials
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Stack.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="Stack_8h_source.html">Stack.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="poly_8h_source.html">poly.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla Stack.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="Stack_8c__incl.png" border="0" usemap="#Stack_8c" alt=""/></div>
+<map name="Stack_8c" id="Stack_8c">
+<area shape="rect" title=" " alt="" coords="101,5,170,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,76,107"/>
+<area shape="rect" href="Stack_8h.html" title=" " alt="" coords="100,80,171,107"/>
+<area shape="rect" href="poly_8h.html" title=" " alt="" coords="153,155,213,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a7ab9c9406d6e8432e3786bd89ec79695"><td class="memItemLeft" align="right" valign="top"><a id="a7ab9c9406d6e8432e3786bd89ec79695"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Stack_8c.html#a7ab9c9406d6e8432e3786bd89ec79695">INIT_SIZE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a7ab9c9406d6e8432e3786bd89ec79695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domyslny rozmiar dynamicznej tablicy. <br /></td></tr>
+<tr class="separator:a7ab9c9406d6e8432e3786bd89ec79695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a0d8e471d67a42dafeb8347463d989237"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Stack_8c.html#a0d8e471d67a42dafeb8347463d989237">push</a> (struct <a class="el" href="structStack.html">Stack</a> *v, <a class="el" href="structPoly.html">Poly</a> *m)</td></tr>
+<tr class="memdesc:a0d8e471d67a42dafeb8347463d989237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje wielomian na koniec tablicy (i w razie konieczności rozszerza tablicę).  <a href="Stack_8c.html#a0d8e471d67a42dafeb8347463d989237">Więcej...</a><br /></td></tr>
+<tr class="separator:a0d8e471d67a42dafeb8347463d989237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89de2ef2dbe596d9649f72f219f47e1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Stack_8c.html#a89de2ef2dbe596d9649f72f219f47e1c">initStack</a> (struct <a class="el" href="structStack.html">Stack</a> *v)</td></tr>
+<tr class="memdesc:a89de2ef2dbe596d9649f72f219f47e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy tablicę o pewnej stałej wielkości.  <a href="Stack_8c.html#a89de2ef2dbe596d9649f72f219f47e1c">Więcej...</a><br /></td></tr>
+<tr class="separator:a89de2ef2dbe596d9649f72f219f47e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26fbf51db1dc3c9b92db1b2a6274d631"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Stack_8c.html#a26fbf51db1dc3c9b92db1b2a6274d631">destroyStack</a> (struct <a class="el" href="structStack.html">Stack</a> *v)</td></tr>
+<tr class="memdesc:a26fbf51db1dc3c9b92db1b2a6274d631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa stos z pamięci.  <a href="Stack_8c.html#a26fbf51db1dc3c9b92db1b2a6274d631">Więcej...</a><br /></td></tr>
+<tr class="separator:a26fbf51db1dc3c9b92db1b2a6274d631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d4718b4139b8433c81fa5630c91de7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Stack_8c.html#ae8d4718b4139b8433c81fa5630c91de7">initStackWithCount</a> (struct <a class="el" href="structStack.html">Stack</a> *v, size_t count)</td></tr>
+<tr class="memdesc:ae8d4718b4139b8433c81fa5630c91de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy tablicę wielkości count.  <a href="Stack_8c.html#ae8d4718b4139b8433c81fa5630c91de7">Więcej...</a><br /></td></tr>
+<tr class="separator:ae8d4718b4139b8433c81fa5630c91de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234cb68c95eb0357289537c33788fd0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Stack_8c.html#a234cb68c95eb0357289537c33788fd0d">top</a> (struct <a class="el" href="structStack.html">Stack</a> *v)</td></tr>
+<tr class="memdesc:a234cb68c95eb0357289537c33788fd0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca wielomian wrzucony jako ostatni.  <a href="Stack_8c.html#a234cb68c95eb0357289537c33788fd0d">Więcej...</a><br /></td></tr>
+<tr class="separator:a234cb68c95eb0357289537c33788fd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b753fbbdf04f89e0006b04427e1b308"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308">pop</a> (struct <a class="el" href="structStack.html">Stack</a> *v)</td></tr>
+<tr class="memdesc:a3b753fbbdf04f89e0006b04427e1b308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca wielomian z góry stosu i go zrzuca.  <a href="Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308">Więcej...</a><br /></td></tr>
+<tr class="separator:a3b753fbbdf04f89e0006b04427e1b308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Implementacja klasy stosów. </p><dl class="section author"><dt>Autor</dt><dd>Jan Wojtach </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>2021 </dd></dl>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a26fbf51db1dc3c9b92db1b2a6274d631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26fbf51db1dc3c9b92db1b2a6274d631">&#9670;&nbsp;</a></span>destroyStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void destroyStack </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Usuwa stos z pamięci. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>: stos </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="Stack_8c_a26fbf51db1dc3c9b92db1b2a6274d631_cgraph.png" border="0" usemap="#Stack_8c_a26fbf51db1dc3c9b92db1b2a6274d631_cgraph" alt=""/></div>
+<map name="Stack_8c_a26fbf51db1dc3c9b92db1b2a6274d631_cgraph" id="Stack_8c_a26fbf51db1dc3c9b92db1b2a6274d631_cgraph">
+<area shape="rect" title="Usuwa stos z pamięci." alt="" coords="5,55,112,81"/>
+<area shape="rect" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="160,29,261,56"/>
+<area shape="rect" href="Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308" title="Zwraca wielomian z góry stosu i go zrzuca." alt="" coords="187,80,234,107"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a89de2ef2dbe596d9649f72f219f47e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89de2ef2dbe596d9649f72f219f47e1c">&#9670;&nbsp;</a></span>initStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initStack </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tworzy tablicę o pewnej stałej wielkości. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>: wskaźnik na tablicę, którą mamy zamiar zainicjalizować </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="Stack_8c_a89de2ef2dbe596d9649f72f219f47e1c_cgraph.png" border="0" usemap="#Stack_8c_a89de2ef2dbe596d9649f72f219f47e1c_cgraph" alt=""/></div>
+<map name="Stack_8c_a89de2ef2dbe596d9649f72f219f47e1c_cgraph" id="Stack_8c_a89de2ef2dbe596d9649f72f219f47e1c_cgraph">
+<area shape="rect" title="Tworzy tablicę o pewnej stałej wielkości." alt="" coords="5,5,84,32"/>
+<area shape="rect" href="Stack_8c.html#ae8d4718b4139b8433c81fa5630c91de7" title="Tworzy tablicę wielkości count." alt="" coords="132,5,279,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae8d4718b4139b8433c81fa5630c91de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8d4718b4139b8433c81fa5630c91de7">&#9670;&nbsp;</a></span>initStackWithCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initStackWithCount </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tworzy tablicę wielkości count. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>: wskaźnik na tablicę, którą mamy zamiar zainicjalizować </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>: wielkość tablicy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b753fbbdf04f89e0006b04427e1b308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b753fbbdf04f89e0006b04427e1b308">&#9670;&nbsp;</a></span>pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPoly.html">Poly</a> pop </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca wielomian z góry stosu i go zrzuca. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>: stos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wielomian p </dd></dl>
+
+</div>
+</div>
+<a id="a0d8e471d67a42dafeb8347463d989237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d8e471d67a42dafeb8347463d989237">&#9670;&nbsp;</a></span>push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void push </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodaje wielomian na koniec tablicy (i w razie konieczności rozszerza tablicę). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>: tablica v, do której chcemy dodać jednomian </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>: wielomian, który chcemy dodać </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a234cb68c95eb0357289537c33788fd0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a234cb68c95eb0357289537c33788fd0d">&#9670;&nbsp;</a></span>top()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPoly.html">Poly</a> top </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca wielomian wrzucony jako ostatni. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>: stos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wielomian p </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pt, 21 maj 2021 23:01:16 dla Polynomials programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

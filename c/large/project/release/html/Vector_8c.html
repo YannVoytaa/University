@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Polynomials: Dokumentacja pliku Vector.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Polynomials
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Vector.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;malloc.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="Vector_8h_source.html">Vector.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla Vector.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="Vector_8c__incl.png" border="0" usemap="#Vector_8c" alt=""/></div>
+<map name="Vector_8c" id="Vector_8c">
+<area shape="rect" title=" " alt="" coords="107,5,180,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,84,107"/>
+<area shape="rect" title=" " alt="" coords="108,80,179,107"/>
+<area shape="rect" href="Vector_8h.html" title=" " alt="" coords="203,80,278,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a7ab9c9406d6e8432e3786bd89ec79695"><td class="memItemLeft" align="right" valign="top"><a id="a7ab9c9406d6e8432e3786bd89ec79695"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Vector_8c.html#a7ab9c9406d6e8432e3786bd89ec79695">INIT_SIZE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a7ab9c9406d6e8432e3786bd89ec79695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domyslny rozmiar dynamicznej tablicy. <br /></td></tr>
+<tr class="separator:a7ab9c9406d6e8432e3786bd89ec79695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a4be60714a288b71addf79140544ad81f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Vector_8c.html#a4be60714a288b71addf79140544ad81f">addCopyToVector</a> (struct <a class="el" href="structVector.html">Vector</a> *v, const <a class="el" href="structMono.html">Mono</a> *m)</td></tr>
+<tr class="memdesc:a4be60714a288b71addf79140544ad81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje kopię jednomianu na koniec tablicy (i w razie konieczności rozszerza tablicę).  <a href="Vector_8c.html#a4be60714a288b71addf79140544ad81f">Więcej...</a><br /></td></tr>
+<tr class="separator:a4be60714a288b71addf79140544ad81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a707d0512c7f3cfde0f63639660615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Vector_8c.html#a20a707d0512c7f3cfde0f63639660615">addToVector</a> (struct <a class="el" href="structVector.html">Vector</a> *v, const <a class="el" href="structMono.html">Mono</a> *m)</td></tr>
+<tr class="memdesc:a20a707d0512c7f3cfde0f63639660615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje jednomian na koniec tablicy (i w razie konieczności rozszerza tablicę).  <a href="Vector_8c.html#a20a707d0512c7f3cfde0f63639660615">Więcej...</a><br /></td></tr>
+<tr class="separator:a20a707d0512c7f3cfde0f63639660615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58825d30d6fd35de137a9d7d0c6b5814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Vector_8c.html#a58825d30d6fd35de137a9d7d0c6b5814">initVector</a> (struct <a class="el" href="structVector.html">Vector</a> *v)</td></tr>
+<tr class="memdesc:a58825d30d6fd35de137a9d7d0c6b5814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy tablicę o pewnej stałej wielkości.  <a href="Vector_8c.html#a58825d30d6fd35de137a9d7d0c6b5814">Więcej...</a><br /></td></tr>
+<tr class="separator:a58825d30d6fd35de137a9d7d0c6b5814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9160cf2aa6becf7db03a8deb7d9c357"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Vector_8c.html#ae9160cf2aa6becf7db03a8deb7d9c357">initVectorWithCount</a> (struct <a class="el" href="structVector.html">Vector</a> *v, size_t count)</td></tr>
+<tr class="memdesc:ae9160cf2aa6becf7db03a8deb7d9c357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy tablicę wielkości count.  <a href="Vector_8c.html#ae9160cf2aa6becf7db03a8deb7d9c357">Więcej...</a><br /></td></tr>
+<tr class="separator:ae9160cf2aa6becf7db03a8deb7d9c357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Implementacja klasy dynamicznych tablic. </p><dl class="section author"><dt>Autor</dt><dd>Jan Wojtach </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>2021 </dd></dl>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a4be60714a288b71addf79140544ad81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be60714a288b71addf79140544ad81f">&#9670;&nbsp;</a></span>addCopyToVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addCopyToVector </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structVector.html">Vector</a> *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structMono.html">Mono</a> *&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodaje kopię jednomianu na koniec tablicy (i w razie konieczności rozszerza tablicę). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>: tablica v </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>: jednomian, którego kopię chcemy dodać </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="Vector_8c_a4be60714a288b71addf79140544ad81f_cgraph.png" border="0" usemap="#Vector_8c_a4be60714a288b71addf79140544ad81f_cgraph" alt=""/></div>
+<map name="Vector_8c_a4be60714a288b71addf79140544ad81f_cgraph" id="Vector_8c_a4be60714a288b71addf79140544ad81f_cgraph">
+<area shape="rect" title="Dodaje kopię jednomianu na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="5,5,140,32"/>
+<area shape="rect" href="poly_8h.html#a5f50698912e4cdcf402f7df555f3abad" title="Robi pełną, głęboką kopię jednomianu." alt="" coords="188,5,283,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a20a707d0512c7f3cfde0f63639660615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a707d0512c7f3cfde0f63639660615">&#9670;&nbsp;</a></span>addToVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addToVector </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structVector.html">Vector</a> *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structMono.html">Mono</a> *&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodaje jednomian na koniec tablicy (i w razie konieczności rozszerza tablicę). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>: tablica v, do której chcemy dodać jednomian </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>: jednomian, który chcemy dodać </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a58825d30d6fd35de137a9d7d0c6b5814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58825d30d6fd35de137a9d7d0c6b5814">&#9670;&nbsp;</a></span>initVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initVector </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structVector.html">Vector</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tworzy tablicę o pewnej stałej wielkości. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>: wskaźnik na tablicę, którą mamy zamiar zainicjalizować </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="Vector_8c_a58825d30d6fd35de137a9d7d0c6b5814_cgraph.png" border="0" usemap="#Vector_8c_a58825d30d6fd35de137a9d7d0c6b5814_cgraph" alt=""/></div>
+<map name="Vector_8c_a58825d30d6fd35de137a9d7d0c6b5814_cgraph" id="Vector_8c_a58825d30d6fd35de137a9d7d0c6b5814_cgraph">
+<area shape="rect" title="Tworzy tablicę o pewnej stałej wielkości." alt="" coords="5,5,89,32"/>
+<area shape="rect" href="Vector_8c.html#ae9160cf2aa6becf7db03a8deb7d9c357" title="Tworzy tablicę wielkości count." alt="" coords="137,5,289,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae9160cf2aa6becf7db03a8deb7d9c357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9160cf2aa6becf7db03a8deb7d9c357">&#9670;&nbsp;</a></span>initVectorWithCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initVectorWithCount </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structVector.html">Vector</a> *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tworzy tablicę wielkości count. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>: wskaźnik na tablicę, którą mamy zamiar zainicjalizować </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>: wielkość tablicy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pt, 21 maj 2021 23:01:16 dla Polynomials programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

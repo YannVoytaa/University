@@ -1,0 +1,13 @@
+<map id="PolyMul" name="PolyMul">
+<area shape="rect" id="node1" title="Mnoży dwa wielomiany." alt="" coords="5,347,80,373"/>
+<area shape="rect" id="node2" href="$Vector_8c.html#a20a707d0512c7f3cfde0f63639660615" title="Dodaje jednomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="433,195,534,221"/>
+<area shape="rect" id="node3" href="$Vector_8c.html#a58825d30d6fd35de137a9d7d0c6b5814" title="Tworzy tablicę o pewnej stałej wielkości." alt="" coords="271,549,355,576"/>
+<area shape="rect" id="node4" href="$poly_8h.html#ab3c9ee0f74dabe5ce9d64a6915566eeb" title="Tworzy jednomian ." alt="" coords="424,245,543,272"/>
+<area shape="rect" id="node5" href="$poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="591,271,681,297"/>
+<area shape="rect" id="node6" href="$poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="729,271,824,297"/>
+<area shape="rect" id="node7" href="$poly_8h.html#a215004f717bcebc9b4e95d20f01f116b" title="Daje wartość wykładnika jendomianu." alt="" coords="431,397,536,424"/>
+<area shape="rect" id="node8" href="$poly_8c.html#aa9a13ecbdb28cf16c699c27290a7c56c" title="Sumuje listę jednomianów i tworzy z nich wielomian." alt="" coords="254,296,373,323"/>
+<area shape="rect" id="node9" href="$poly_8h.html#aac5948dc82c3a64c55c60831991f7864" title="Tworzy wielomian, który jest współczynnikiem (wielomian stały)." alt="" coords="425,448,542,475"/>
+<area shape="rect" id="node10" href="$poly_8c.html#a6e066ef82f4d7611d7276a6adc8e47ac" title="Mnoży dwa wielomiany." alt="" coords="128,391,203,417"/>
+<area shape="rect" id="node11" href="$poly_8c.html#a720365f2069ca32ea4234014c98d6863" title="Mnoży wielomian przez stałą." alt="" coords="251,600,376,627"/>
+</map>

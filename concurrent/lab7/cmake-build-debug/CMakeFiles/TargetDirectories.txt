@@ -1,0 +1,13 @@
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/install/local.dir
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/install.dir
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/wait.dir
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/fork.dir
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/hello-world.dir
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/err.dir
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/exec.dir
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/tree.dir
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/line.dir
+/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/CMakeFiles/rebuild_cache.dir

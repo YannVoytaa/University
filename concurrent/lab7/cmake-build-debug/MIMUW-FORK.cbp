@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="MIMUW-FORK"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wait">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/wait" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 wait"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wait/fast">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/wait" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 wait/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fork">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/fork" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 fork"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fork/fast">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/fork" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 fork/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hello-world">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/hello-world" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 hello-world"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hello-world/fast">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/hello-world" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 hello-world/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="err">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/liberr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 err"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="err/fast">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/liberr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 err/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exec">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/exec" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 exec"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exec/fast">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/exec" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 exec/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tree">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/tree" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tree/fast">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/tree" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="line">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/line" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 line"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="line/fast">
+				<Option output="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/line" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 line/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yannvoytaa/CLionProjects/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/yannvoytaa/CLionProjects/lab7/err.c">
+			<Option target="err"/>
+		</Unit>
+		<Unit filename="/home/yannvoytaa/CLionProjects/lab7/err.h">
+			<Option target="err"/>
+		</Unit>
+		<Unit filename="/home/yannvoytaa/CLionProjects/lab7/exec.c">
+			<Option target="exec"/>
+		</Unit>
+		<Unit filename="/home/yannvoytaa/CLionProjects/lab7/fork.c">
+			<Option target="fork"/>
+		</Unit>
+		<Unit filename="/home/yannvoytaa/CLionProjects/lab7/hello-world.c">
+			<Option target="hello-world"/>
+		</Unit>
+		<Unit filename="/home/yannvoytaa/CLionProjects/lab7/line.c">
+			<Option target="line"/>
+		</Unit>
+		<Unit filename="/home/yannvoytaa/CLionProjects/lab7/tree.c">
+			<Option target="tree"/>
+		</Unit>
+		<Unit filename="/home/yannvoytaa/CLionProjects/lab7/wait.c">
+			<Option target="wait"/>
+		</Unit>
+		<Unit filename="/home/yannvoytaa/CLionProjects/lab7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,14 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,60,285"/>
+<area shape="rect" id="node2" href="$Stack_8c.html#a26fbf51db1dc3c9b92db1b2a6274d631" title="Usuwa stos z pamięci." alt="" coords="118,5,225,32"/>
+<area shape="rect" id="node3" href="$poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="283,56,384,83"/>
+<area shape="rect" id="node4" href="$CalcFunctions_8c.html#a3cfacb6081af5787f4f2236559764f0e" title="Sprawdza, czy w linii znajduje się \0 (w środku linii)." alt="" coords="133,107,209,133"/>
+<area shape="rect" id="node5" href="$Stack_8c.html#a89de2ef2dbe596d9649f72f219f47e1c" title="Tworzy tablicę o pewnej stałej wielkości." alt="" coords="132,157,211,184"/>
+<area shape="rect" id="node6" href="$CalcFunctions_8c.html#acd6f5c21e24ac959fb123ec4df931e03" title="Sprawdza, czy linia jest komentarzem (zaczyna się hashem)." alt="" coords="120,208,223,235"/>
+<area shape="rect" id="node7" href="$CalcFunctions_8c.html#a28fae96556eaf5444390af49ae3fd40a" title="Sprawdza, czy linia jest pusta." alt="" coords="130,259,213,285"/>
+<area shape="rect" id="node8" href="$CalcFunctions_8c.html#a6eba404767b6677b37ef06843e39108f" title="Wypisuje błąd na podstawie informacji." alt="" coords="130,309,213,336"/>
+<area shape="rect" id="node9" href="$Stack_8c.html#a0d8e471d67a42dafeb8347463d989237" title="Dodaje wielomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="307,385,360,412"/>
+<area shape="rect" id="node10" href="$CalcFunctions_8c.html#a9861f7779557c3faeca349af02025ce1" title="Wykonuje operację na podstawie linii." alt="" coords="113,360,229,387"/>
+<area shape="rect" id="node11" href="$CalcFunctions_8c.html#a0663045e0abb84063f1ef3459ec0d4a0" title="Wczytuje wielomian z linii." alt="" coords="131,461,211,488"/>
+<area shape="rect" id="node12" href="$CalcFunctions_8c.html#ab0cad87e5fbd691bbe450622509ff592" title="Sprawdza, czy linia zaczyna się od litery." alt="" coords="108,512,235,539"/>
+</map>

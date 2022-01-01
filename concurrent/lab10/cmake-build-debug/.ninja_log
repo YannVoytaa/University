@@ -1,0 +1,15 @@
+# ninja log v5
+0	39	1639651517045899071	CMakeFiles/unnamed_memory_protected.dir/unnamed_memory_protected.c.o	97fd82efef1e7a0e
+6	58	1639647993797505549	CMakeFiles/get_memory.dir/get_memory.c.o	5baef112fe49248f
+39	59	1639651517065898998	unnamed_memory_protected	8cf5574bcc498ecc
+7	64	1639647993805505521	CMakeFiles/err.dir/err.c.o	cd5c46569a7bdcd0
+1	51	1639648034689366106	CMakeFiles/send_message.dir/send_message.c.o	5f9e86f57e21ecd1
+1	42	1639648285124541973	CMakeFiles/send_message_protected.dir/send_message_protected.c.o	d055625032d93166
+51	85	1639648034721365998	send_message	94a31ce23e976387
+64	72	1639647993813505494	liberr.a	de01923821a4a581
+42	67	1639648285148541896	send_message_protected	f810f45612d4d980
+0	41	1639648220316751606	CMakeFiles/send_message_no_inheritance.dir/send_message_no_inheritance.c.o	3d9e255c057ef22
+42	63	1639648220340751528	send_message_no_inheritance	1bd6b4ef2181b483
+48	69	1639657549028514427	gifts	cc0ff9e7b512315b
+0	48	1639657549008514501	CMakeFiles/gifts.dir/gifts.c.o	b5c60aa7cd22cddb
+72	105	1639647993845505384	get_memory	90b554d5ce4b5ff5

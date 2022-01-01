@@ -1,0 +1,1207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Polynomials: Dokumentacja pliku poly.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Polynomials
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Struktury danych</a> &#124;
+<a href="#typedef-members">Definicje typów</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku poly.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla poly.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h__incl.png" border="0" usemap="#poly_8h" alt=""/></div>
+<map name="poly_8h" id="poly_8h">
+<area shape="rect" title=" " alt="" coords="115,5,175,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,80,107"/>
+<area shape="rect" title=" " alt="" coords="104,80,187,107"/>
+<area shape="rect" title=" " alt="" coords="211,80,285,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h__dep__incl.png" border="0" usemap="#poly_8hdep" alt=""/></div>
+<map name="poly_8hdep" id="poly_8hdep">
+<area shape="rect" title=" " alt="" coords="381,5,441,32"/>
+<area shape="rect" href="calc_8c.html" title=" " alt="" coords="152,169,211,196"/>
+<area shape="rect" href="Stack_8h.html" title=" " alt="" coords="78,87,149,114"/>
+<area shape="rect" href="CalcFunctions_8c.html" title=" " alt="" coords="5,169,128,196"/>
+<area shape="rect" href="Stack_8c.html" title=" " alt="" coords="235,169,304,196"/>
+<area shape="rect" href="Vector_8h.html" title=" " alt="" coords="248,87,323,114"/>
+<area shape="rect" href="poly_8c.html" title=" " alt="" coords="328,169,387,196"/>
+<area shape="rect" href="helper__functions__from__example_8h_source.html" title=" " alt="" coords="499,80,667,121"/>
+<area shape="rect" href="corner__add__monos_8h_source.html" title=" " alt="" coords="411,169,568,196"/>
+<area shape="rect" href="corner__various__tests_8h_source.html" title=" " alt="" coords="593,169,762,196"/>
+<area shape="rect" href="poly__at__complexity_8h_source.html" title=" " alt="" coords="787,169,947,196"/>
+<area shape="rect" href="stresslib_8h_source.html" title=" " alt="" coords="793,87,882,114"/>
+</map>
+</div>
+</div>
+<p><a href="poly_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Struktury danych</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPoly.html">Poly</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">To jest struktura przechowująca wielomian.  <a href="structPoly.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMono.html">Mono</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">To jest struktura przechowująca jednomian.  <a href="structMono.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Definicje typów</h2></td></tr>
+<tr class="memitem:a912dfe9f745aee73326baa53126fd650"><td class="memItemLeft" align="right" valign="top"><a id="a912dfe9f745aee73326baa53126fd650"></a>
+typedef long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a912dfe9f745aee73326baa53126fd650">poly_coeff_t</a></td></tr>
+<tr class="memdesc:a912dfe9f745aee73326baa53126fd650"><td class="mdescLeft">&#160;</td><td class="mdescRight">To jest typ reprezentujący współczynniki. <br /></td></tr>
+<tr class="separator:a912dfe9f745aee73326baa53126fd650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aeff364e4fc97a215cfe70e36e14c14"><td class="memItemLeft" align="right" valign="top"><a id="a8aeff364e4fc97a215cfe70e36e14c14"></a>
+typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a></td></tr>
+<tr class="memdesc:a8aeff364e4fc97a215cfe70e36e14c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">To jest typ reprezentujący wykładniki. <br /></td></tr>
+<tr class="separator:a8aeff364e4fc97a215cfe70e36e14c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09b4d838d2883d504576aeaf098e89f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#ab09b4d838d2883d504576aeaf098e89f">Poly</a></td></tr>
+<tr class="memdesc:ab09b4d838d2883d504576aeaf098e89f"><td class="mdescLeft">&#160;</td><td class="mdescRight">To jest struktura przechowująca wielomian.  <a href="poly_8h.html#ab09b4d838d2883d504576aeaf098e89f">Więcej...</a><br /></td></tr>
+<tr class="separator:ab09b4d838d2883d504576aeaf098e89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e617be141abb9e225e9a7f85d0dc07"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structMono.html">Mono</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#ab9e617be141abb9e225e9a7f85d0dc07">Mono</a></td></tr>
+<tr class="memdesc:ab9e617be141abb9e225e9a7f85d0dc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">To jest struktura przechowująca jednomian.  <a href="poly_8h.html#ab9e617be141abb9e225e9a7f85d0dc07">Więcej...</a><br /></td></tr>
+<tr class="separator:ab9e617be141abb9e225e9a7f85d0dc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a215004f717bcebc9b4e95d20f01f116b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a215004f717bcebc9b4e95d20f01f116b">MonoGetExp</a> (const <a class="el" href="structMono.html">Mono</a> *m)</td></tr>
+<tr class="memdesc:a215004f717bcebc9b4e95d20f01f116b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Daje wartość wykładnika jendomianu.  <a href="poly_8h.html#a215004f717bcebc9b4e95d20f01f116b">Więcej...</a><br /></td></tr>
+<tr class="separator:a215004f717bcebc9b4e95d20f01f116b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5948dc82c3a64c55c60831991f7864"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#aac5948dc82c3a64c55c60831991f7864">PolyFromCoeff</a> (<a class="el" href="poly_8h.html#a912dfe9f745aee73326baa53126fd650">poly_coeff_t</a> c)</td></tr>
+<tr class="memdesc:aac5948dc82c3a64c55c60831991f7864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy wielomian, który jest współczynnikiem (wielomian stały).  <a href="poly_8h.html#aac5948dc82c3a64c55c60831991f7864">Więcej...</a><br /></td></tr>
+<tr class="separator:aac5948dc82c3a64c55c60831991f7864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3229f3aa1f6bffaf25b68c8f7acecb0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#af3229f3aa1f6bffaf25b68c8f7acecb0">PolyZero</a> (void)</td></tr>
+<tr class="memdesc:af3229f3aa1f6bffaf25b68c8f7acecb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy wielomian tożsamościowo równy zeru.  <a href="poly_8h.html#af3229f3aa1f6bffaf25b68c8f7acecb0">Więcej...</a><br /></td></tr>
+<tr class="separator:af3229f3aa1f6bffaf25b68c8f7acecb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf60733ab55efe5130da77928fe941d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d">PolyIsZero</a> (const <a class="el" href="structPoly.html">Poly</a> *p)</td></tr>
+<tr class="memdesc:aaaf60733ab55efe5130da77928fe941d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy wielomian jest tożsamościowo równy zeru.  <a href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d">Więcej...</a><br /></td></tr>
+<tr class="separator:aaaf60733ab55efe5130da77928fe941d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c9ee0f74dabe5ce9d64a6915566eeb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structMono.html">Mono</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#ab3c9ee0f74dabe5ce9d64a6915566eeb">MonoFromPoly</a> (const <a class="el" href="structPoly.html">Poly</a> *p, <a class="el" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a> n)</td></tr>
+<tr class="memdesc:ab3c9ee0f74dabe5ce9d64a6915566eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy jednomian \(px_i^n\).  <a href="poly_8h.html#ab3c9ee0f74dabe5ce9d64a6915566eeb">Więcej...</a><br /></td></tr>
+<tr class="separator:ab3c9ee0f74dabe5ce9d64a6915566eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98512498bdb4679278532e930b727755"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a98512498bdb4679278532e930b727755">PolyIsCoeff</a> (const <a class="el" href="structPoly.html">Poly</a> *p)</td></tr>
+<tr class="memdesc:a98512498bdb4679278532e930b727755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały).  <a href="poly_8h.html#a98512498bdb4679278532e930b727755">Więcej...</a><br /></td></tr>
+<tr class="separator:a98512498bdb4679278532e930b727755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54faf738d9aa518d1e1d6db6c3142e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a> (<a class="el" href="structPoly.html">Poly</a> *p)</td></tr>
+<tr class="memdesc:a54faf738d9aa518d1e1d6db6c3142e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa wielomian z pamięci.  <a href="poly_8h.html#a54faf738d9aa518d1e1d6db6c3142e3f">Więcej...</a><br /></td></tr>
+<tr class="separator:a54faf738d9aa518d1e1d6db6c3142e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bcd38ab44736f6e230b04b4eaec000a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a0bcd38ab44736f6e230b04b4eaec000a">MonoDestroy</a> (<a class="el" href="structMono.html">Mono</a> *m)</td></tr>
+<tr class="memdesc:a0bcd38ab44736f6e230b04b4eaec000a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa jednomian z pamięci.  <a href="poly_8h.html#a0bcd38ab44736f6e230b04b4eaec000a">Więcej...</a><br /></td></tr>
+<tr class="separator:a0bcd38ab44736f6e230b04b4eaec000a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295cdeb61c077ea6f408208d331271cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a295cdeb61c077ea6f408208d331271cd">PolyClone</a> (const <a class="el" href="structPoly.html">Poly</a> *p)</td></tr>
+<tr class="memdesc:a295cdeb61c077ea6f408208d331271cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Robi pełną, głęboką kopię wielomianu.  <a href="poly_8h.html#a295cdeb61c077ea6f408208d331271cd">Więcej...</a><br /></td></tr>
+<tr class="separator:a295cdeb61c077ea6f408208d331271cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f50698912e4cdcf402f7df555f3abad"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structMono.html">Mono</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a5f50698912e4cdcf402f7df555f3abad">MonoClone</a> (const <a class="el" href="structMono.html">Mono</a> *m)</td></tr>
+<tr class="memdesc:a5f50698912e4cdcf402f7df555f3abad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Robi pełną, głęboką kopię jednomianu.  <a href="poly_8h.html#a5f50698912e4cdcf402f7df555f3abad">Więcej...</a><br /></td></tr>
+<tr class="separator:a5f50698912e4cdcf402f7df555f3abad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd55434759a46901958eb5ad79b78217"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#afd55434759a46901958eb5ad79b78217">PolyAdd</a> (const <a class="el" href="structPoly.html">Poly</a> *p, const <a class="el" href="structPoly.html">Poly</a> *q)</td></tr>
+<tr class="memdesc:afd55434759a46901958eb5ad79b78217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje dwa wielomiany.  <a href="poly_8h.html#afd55434759a46901958eb5ad79b78217">Więcej...</a><br /></td></tr>
+<tr class="separator:afd55434759a46901958eb5ad79b78217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a13ecbdb28cf16c699c27290a7c56c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#aa9a13ecbdb28cf16c699c27290a7c56c">PolyAddMonos</a> (size_t count, const <a class="el" href="structMono.html">Mono</a> monos[])</td></tr>
+<tr class="memdesc:aa9a13ecbdb28cf16c699c27290a7c56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sumuje listę jednomianów i tworzy z nich wielomian.  <a href="poly_8h.html#aa9a13ecbdb28cf16c699c27290a7c56c">Więcej...</a><br /></td></tr>
+<tr class="separator:aa9a13ecbdb28cf16c699c27290a7c56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e066ef82f4d7611d7276a6adc8e47ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a6e066ef82f4d7611d7276a6adc8e47ac">PolyMul</a> (const <a class="el" href="structPoly.html">Poly</a> *p, const <a class="el" href="structPoly.html">Poly</a> *q)</td></tr>
+<tr class="memdesc:a6e066ef82f4d7611d7276a6adc8e47ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mnoży dwa wielomiany.  <a href="poly_8h.html#a6e066ef82f4d7611d7276a6adc8e47ac">Więcej...</a><br /></td></tr>
+<tr class="separator:a6e066ef82f4d7611d7276a6adc8e47ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79194d594bd19fae18c7d72a30364b18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a79194d594bd19fae18c7d72a30364b18">PolyNeg</a> (const <a class="el" href="structPoly.html">Poly</a> *p)</td></tr>
+<tr class="memdesc:a79194d594bd19fae18c7d72a30364b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca przeciwny wielomian.  <a href="poly_8h.html#a79194d594bd19fae18c7d72a30364b18">Więcej...</a><br /></td></tr>
+<tr class="separator:a79194d594bd19fae18c7d72a30364b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd180157f87e1da3669356026bbddc5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#abd180157f87e1da3669356026bbddc5e">PolySub</a> (const <a class="el" href="structPoly.html">Poly</a> *p, const <a class="el" href="structPoly.html">Poly</a> *q)</td></tr>
+<tr class="memdesc:abd180157f87e1da3669356026bbddc5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odejmuje wielomian od wielomianu.  <a href="poly_8h.html#abd180157f87e1da3669356026bbddc5e">Więcej...</a><br /></td></tr>
+<tr class="separator:abd180157f87e1da3669356026bbddc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d3ea4ed1d054d9fbc4f715bbc64544"><td class="memItemLeft" align="right" valign="top"><a class="el" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#af1d3ea4ed1d054d9fbc4f715bbc64544">PolyDegBy</a> (const <a class="el" href="structPoly.html">Poly</a> *p, size_t var_idx)</td></tr>
+<tr class="memdesc:af1d3ea4ed1d054d9fbc4f715bbc64544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca stopień wielomianu ze względu na zadaną zmienną (-1 dla wielomianu tożsamościowo równego zeru).  <a href="poly_8h.html#af1d3ea4ed1d054d9fbc4f715bbc64544">Więcej...</a><br /></td></tr>
+<tr class="separator:af1d3ea4ed1d054d9fbc4f715bbc64544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10020aea410f5a07374537dbb431d1fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a10020aea410f5a07374537dbb431d1fe">PolyDeg</a> (const <a class="el" href="structPoly.html">Poly</a> *p)</td></tr>
+<tr class="memdesc:a10020aea410f5a07374537dbb431d1fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca stopień wielomianu (-1 dla wielomianu tożsamościowo równego zeru).  <a href="poly_8h.html#a10020aea410f5a07374537dbb431d1fe">Więcej...</a><br /></td></tr>
+<tr class="separator:a10020aea410f5a07374537dbb431d1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1183de0891f01c491dca485e284a1e6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a> (const <a class="el" href="structPoly.html">Poly</a> *p, const <a class="el" href="structPoly.html">Poly</a> *q)</td></tr>
+<tr class="memdesc:a1183de0891f01c491dca485e284a1e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza równość dwóch wielomianów.  <a href="poly_8h.html#a1183de0891f01c491dca485e284a1e6c">Więcej...</a><br /></td></tr>
+<tr class="separator:a1183de0891f01c491dca485e284a1e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d1e18efcb1373fe1f0fae77856f488"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a22d1e18efcb1373fe1f0fae77856f488">PolyAt</a> (const <a class="el" href="structPoly.html">Poly</a> *p, <a class="el" href="poly_8h.html#a912dfe9f745aee73326baa53126fd650">poly_coeff_t</a> x)</td></tr>
+<tr class="memdesc:a22d1e18efcb1373fe1f0fae77856f488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wylicza wartość wielomianu w punkcie <code>x</code>.  <a href="poly_8h.html#a22d1e18efcb1373fe1f0fae77856f488">Więcej...</a><br /></td></tr>
+<tr class="separator:a22d1e18efcb1373fe1f0fae77856f488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af659cef51d42c197388e75cd53b57fe5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#af659cef51d42c197388e75cd53b57fe5">PolyAddWithCoeff</a> (const <a class="el" href="structPoly.html">Poly</a> *p, const <a class="el" href="structPoly.html">Poly</a> *q, <a class="el" href="poly_8h.html#a912dfe9f745aee73326baa53126fd650">poly_coeff_t</a> c)</td></tr>
+<tr class="memdesc:af659cef51d42c197388e75cd53b57fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje pierwszy wielomian do drugiego, pomnożonego przez współczynnik.  <a href="poly_8h.html#af659cef51d42c197388e75cd53b57fe5">Więcej...</a><br /></td></tr>
+<tr class="separator:af659cef51d42c197388e75cd53b57fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205cfc78ca06c3c2d51df8eb4ff2f96f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poly_8h.html#a205cfc78ca06c3c2d51df8eb4ff2f96f">PrintPoly</a> (<a class="el" href="structPoly.html">Poly</a> *p)</td></tr>
+<tr class="memdesc:a205cfc78ca06c3c2d51df8eb4ff2f96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wypisuje wielomian na standardowe wyjście.  <a href="poly_8h.html#a205cfc78ca06c3c2d51df8eb4ff2f96f">Więcej...</a><br /></td></tr>
+<tr class="separator:a205cfc78ca06c3c2d51df8eb4ff2f96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Interfejs klasy wielomianów rzadkich wielu zmiennych</p>
+<dl class="section author"><dt>Autorzy</dt><dd>Jakub Pawlewicz <a href="#" onclick="location.href='mai'+'lto:'+'pan'+'@m'+'imu'+'w.'+'edu'+'.p'+'l'; return false;">pan@m<span style="display: none;">.nosp@m.</span>imuw<span style="display: none;">.nosp@m.</span>.edu.<span style="display: none;">.nosp@m.</span>pl</a>, Marcin Peczarski <a href="#" onclick="location.href='mai'+'lto:'+'mar'+'pe'+'@mi'+'mu'+'w.e'+'du'+'.pl'; return false;">marpe<span style="display: none;">.nosp@m.</span>@mim<span style="display: none;">.nosp@m.</span>uw.ed<span style="display: none;">.nosp@m.</span>u.pl</a> </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Uniwersytet Warszawski </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>2021 </dd></dl>
+</div><h2 class="groupheader">Dokumentacja definicji typów</h2>
+<a id="ab9e617be141abb9e225e9a7f85d0dc07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e617be141abb9e225e9a7f85d0dc07">&#9670;&nbsp;</a></span>Mono</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structMono.html">Mono</a> <a class="el" href="structMono.html">Mono</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>To jest struktura przechowująca jednomian. </p>
+<p>Jednomian ma postać \(px_i^n\). Współczynnik \(p\) może też być wielomianem nad kolejną zmienną \(x_{i+1}\). </p>
+
+</div>
+</div>
+<a id="ab09b4d838d2883d504576aeaf098e89f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09b4d838d2883d504576aeaf098e89f">&#9670;&nbsp;</a></span>Poly</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structPoly.html">Poly</a> <a class="el" href="structPoly.html">Poly</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>To jest struktura przechowująca wielomian. </p>
+<p>Wielomian jest albo liczbą całkowitą, czyli wielomianem stałym (wtedy <code>arr == NULL</code>), albo niepustą listą jednomianów (wtedy <code>arr != NULL</code>). </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a5f50698912e4cdcf402f7df555f3abad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f50698912e4cdcf402f7df555f3abad">&#9670;&nbsp;</a></span>MonoClone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structMono.html">Mono</a> MonoClone </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structMono.html">Mono</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Robi pełną, głęboką kopię jednomianu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>: jednomian </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>skopiowany jednomian </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_a5f50698912e4cdcf402f7df555f3abad_cgraph.png" border="0" usemap="#poly_8h_a5f50698912e4cdcf402f7df555f3abad_cgraph" alt=""/></div>
+<map name="poly_8h_a5f50698912e4cdcf402f7df555f3abad_cgraph" id="poly_8h_a5f50698912e4cdcf402f7df555f3abad_cgraph">
+<area shape="rect" title="Robi pełną, głęboką kopię jednomianu." alt="" coords="5,5,100,32"/>
+<area shape="rect" href="poly_8h.html#a295cdeb61c077ea6f408208d331271cd" title="Robi pełną, głęboką kopię wielomianu." alt="" coords="148,5,235,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0bcd38ab44736f6e230b04b4eaec000a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bcd38ab44736f6e230b04b4eaec000a">&#9670;&nbsp;</a></span>MonoDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void MonoDestroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMono.html">Mono</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Usuwa jednomian z pamięci. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>: jednomian </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_a0bcd38ab44736f6e230b04b4eaec000a_cgraph.png" border="0" usemap="#poly_8h_a0bcd38ab44736f6e230b04b4eaec000a_cgraph" alt=""/></div>
+<map name="poly_8h_a0bcd38ab44736f6e230b04b4eaec000a_cgraph" id="poly_8h_a0bcd38ab44736f6e230b04b4eaec000a_cgraph">
+<area shape="rect" title="Usuwa jednomian z pamięci." alt="" coords="5,5,115,32"/>
+<area shape="rect" href="poly_8h.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="163,5,264,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab3c9ee0f74dabe5ce9d64a6915566eeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c9ee0f74dabe5ce9d64a6915566eeb">&#9670;&nbsp;</a></span>MonoFromPoly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structMono.html">Mono</a> MonoFromPoly </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tworzy jednomian \(px_i^n\). </p>
+<p>Przejmuje na własność zawartość struktury wskazywanej przez <code>p</code>. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian - współczynnik jednomianu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>: wykładnik </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>jednomian \(px_i^n\) </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_ab3c9ee0f74dabe5ce9d64a6915566eeb_cgraph.png" border="0" usemap="#poly_8h_ab3c9ee0f74dabe5ce9d64a6915566eeb_cgraph" alt=""/></div>
+<map name="poly_8h_ab3c9ee0f74dabe5ce9d64a6915566eeb_cgraph" id="poly_8h_ab3c9ee0f74dabe5ce9d64a6915566eeb_cgraph">
+<area shape="rect" title="Tworzy jednomian ." alt="" coords="5,5,124,32"/>
+<area shape="rect" href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="172,5,263,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a215004f717bcebc9b4e95d20f01f116b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a215004f717bcebc9b4e95d20f01f116b">&#9670;&nbsp;</a></span>MonoGetExp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a> MonoGetExp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structMono.html">Mono</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Daje wartość wykładnika jendomianu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>: jednomian </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wartość wykładnika jednomianu </dd></dl>
+
+</div>
+</div>
+<a id="afd55434759a46901958eb5ad79b78217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd55434759a46901958eb5ad79b78217">&#9670;&nbsp;</a></span>PolyAdd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPoly.html">Poly</a> PolyAdd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>q</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodaje dwa wielomiany. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian \(p\) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>: wielomian \(q\) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>\(p + q\) </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_afd55434759a46901958eb5ad79b78217_cgraph.png" border="0" usemap="#poly_8h_afd55434759a46901958eb5ad79b78217_cgraph" alt=""/></div>
+<map name="poly_8h_afd55434759a46901958eb5ad79b78217_cgraph" id="poly_8h_afd55434759a46901958eb5ad79b78217_cgraph">
+<area shape="rect" title="Dodaje dwa wielomiany." alt="" coords="5,29,80,56"/>
+<area shape="rect" href="poly_8c.html#af659cef51d42c197388e75cd53b57fe5" title="Dodaje pierwszy wielomian do drugiego, pomnożonego przez współczynnik." alt="" coords="128,29,267,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa9a13ecbdb28cf16c699c27290a7c56c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a13ecbdb28cf16c699c27290a7c56c">&#9670;&nbsp;</a></span>PolyAddMonos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPoly.html">Poly</a> PolyAddMonos </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structMono.html">Mono</a>&#160;</td>
+          <td class="paramname"><em>monos</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sumuje listę jednomianów i tworzy z nich wielomian. </p>
+<p>Przejmuje na własność zawartość tablicy <code>monos</code>. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>: liczba jednomianów </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">monos</td><td>: tablica jednomianów </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wielomian będący sumą jednomianów </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_aa9a13ecbdb28cf16c699c27290a7c56c_cgraph.png" border="0" usemap="#poly_8h_aa9a13ecbdb28cf16c699c27290a7c56c_cgraph" alt=""/></div>
+<map name="poly_8h_aa9a13ecbdb28cf16c699c27290a7c56c_cgraph" id="poly_8h_aa9a13ecbdb28cf16c699c27290a7c56c_cgraph">
+<area shape="rect" title="Sumuje listę jednomianów i tworzy z nich wielomian." alt="" coords="5,233,124,260"/>
+<area shape="rect" href="Vector_8c.html#a20a707d0512c7f3cfde0f63639660615" title="Dodaje jednomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="197,5,299,32"/>
+<area shape="rect" href="poly_8c.html#a6f91b4cd1af5dc277444c465e2ca3ab6" title="Porównuje jednomieny względem wykładników." alt="" coords="223,107,273,133"/>
+<area shape="rect" href="poly_8h.html#a215004f717bcebc9b4e95d20f01f116b" title="Daje wartość wykładnika jendomianu." alt="" coords="378,107,483,133"/>
+<area shape="rect" href="Vector_8c.html#ae9160cf2aa6becf7db03a8deb7d9c357" title="Tworzy tablicę wielkości count." alt="" coords="172,259,324,285"/>
+<area shape="rect" href="poly_8h.html#a0bcd38ab44736f6e230b04b4eaec000a" title="Usuwa jednomian z pamięci." alt="" coords="193,309,303,336"/>
+<area shape="rect" href="poly_8h.html#ab3c9ee0f74dabe5ce9d64a6915566eeb" title="Tworzy jednomian ." alt="" coords="189,411,307,437"/>
+<area shape="rect" href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="385,385,476,412"/>
+<area shape="rect" href="poly_8c.html#afd55434759a46901958eb5ad79b78217" title="Dodaje dwa wielomiany." alt="" coords="211,461,285,488"/>
+<area shape="rect" href="poly_8h.html#aac5948dc82c3a64c55c60831991f7864" title="Tworzy wielomian, który jest współczynnikiem (wielomian stały)." alt="" coords="372,183,489,209"/>
+<area shape="rect" href="poly_8c.html#a731d4c58953e6021b072235a8b2362cc" title="Tworzy wielomian z posortowanej rosnąco dynamicznej tablicy jednomianów." alt="" coords="186,157,310,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af659cef51d42c197388e75cd53b57fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af659cef51d42c197388e75cd53b57fe5">&#9670;&nbsp;</a></span>PolyAddWithCoeff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPoly.html">Poly</a> PolyAddWithCoeff </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="poly_8h.html#a912dfe9f745aee73326baa53126fd650">poly_coeff_t</a>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodaje pierwszy wielomian do drugiego, pomnożonego przez współczynnik. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian \(p\) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>: wielomian \(q\) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>: współczynnik c </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>\(p\) + c * \(q\) </dd></dl>
+<p>jeśli q jest współczynnikiem, a p nie, to chcemy stworzyć wielomian p + (q * c) = (q * c) + p * 1</p>
+<p>ponizej zakladamy, ze wielomiany nie sa wspolczynnikami i, że exp sa posortowane</p>
+<p>jesli dodalismy juz wszystkie jednomiany z p lub z q</p>
+<p>jesli istnieją jednomiany zarówno z p i z q</p>
+<p>jesli współczynniki są takie same, to je dodajemy do siebie</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_af659cef51d42c197388e75cd53b57fe5_cgraph.png" border="0" usemap="#poly_8h_af659cef51d42c197388e75cd53b57fe5_cgraph" alt=""/></div>
+<map name="poly_8h_af659cef51d42c197388e75cd53b57fe5_cgraph" id="poly_8h_af659cef51d42c197388e75cd53b57fe5_cgraph">
+<area shape="rect" title="Dodaje pierwszy wielomian do drugiego, pomnożonego przez współczynnik." alt="" coords="5,460,144,487"/>
+<area shape="rect" href="Vector_8c.html#a4be60714a288b71addf79140544ad81f" title="Dodaje kopię jednomianu na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="537,5,672,32"/>
+<area shape="rect" href="Vector_8c.html#a20a707d0512c7f3cfde0f63639660615" title="Dodaje jednomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="554,56,655,83"/>
+<area shape="rect" href="Vector_8c.html#a58825d30d6fd35de137a9d7d0c6b5814" title="Tworzy tablicę o pewnej stałej wielkości." alt="" coords="563,107,647,133"/>
+<area shape="rect" href="poly_8h.html#ab3c9ee0f74dabe5ce9d64a6915566eeb" title="Tworzy jednomian ." alt="" coords="545,360,664,387"/>
+<area shape="rect" href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="733,360,824,387"/>
+<area shape="rect" href="poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="885,499,980,525"/>
+<area shape="rect" href="poly_8h.html#a215004f717bcebc9b4e95d20f01f116b" title="Daje wartość wykładnika jendomianu." alt="" coords="726,587,831,613"/>
+<area shape="rect" href="poly_8c.html#af659cef51d42c197388e75cd53b57fe5" title="Dodaje pierwszy wielomian do drugiego, pomnożonego przez współczynnik." alt="" coords="192,303,331,329"/>
+<area shape="rect" href="poly_8h.html#aac5948dc82c3a64c55c60831991f7864" title="Tworzy wielomian, który jest współczynnikiem (wielomian stały)." alt="" coords="720,789,837,816"/>
+<area shape="rect" href="poly_8c.html#a731d4c58953e6021b072235a8b2362cc" title="Tworzy wielomian z posortowanej rosnąco dynamicznej tablicy jednomianów." alt="" coords="543,688,667,715"/>
+<area shape="rect" href="poly_8c.html#a720365f2069ca32ea4234014c98d6863" title="Mnoży wielomian przez stałą." alt="" coords="542,411,667,437"/>
+<area shape="rect" href="poly_8c.html#a666858ae7598e811e8d5fe9dac9ff954" title="Dodaje dwa wielomiany zakładając, że pierwszy jest współczynnikiem." alt="" coords="379,208,489,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a22d1e18efcb1373fe1f0fae77856f488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22d1e18efcb1373fe1f0fae77856f488">&#9670;&nbsp;</a></span>PolyAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPoly.html">Poly</a> PolyAt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="poly_8h.html#a912dfe9f745aee73326baa53126fd650">poly_coeff_t</a>&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wylicza wartość wielomianu w punkcie <code>x</code>. </p>
+<p>Wstawia pod pierwszą zmienną wielomianu wartość <code>x</code>. W wyniku może powstać wielomian, jeśli współczynniki są wielomianami. Wtedy zmniejszane są o jeden indeksy zmiennych w takim wielomianie. Formalnie dla wielomianu \(p(x_0, x_1, x_2, \ldots)\) wynikiem jest wielomian \(p(x, x_0, x_1, \ldots)\). </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian \(p\) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>: wartość argumentu \(x\) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>\(p(x, x_0, x_1, \ldots)\) </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_a22d1e18efcb1373fe1f0fae77856f488_cgraph.png" border="0" usemap="#poly_8h_a22d1e18efcb1373fe1f0fae77856f488_cgraph" alt=""/></div>
+<map name="poly_8h_a22d1e18efcb1373fe1f0fae77856f488_cgraph" id="poly_8h_a22d1e18efcb1373fe1f0fae77856f488_cgraph">
+<area shape="rect" title="Wylicza wartość wielomianu w punkcie x." alt="" coords="5,321,69,348"/>
+<area shape="rect" href="Vector_8c.html#a20a707d0512c7f3cfde0f63639660615" title="Dodaje jednomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="418,195,519,221"/>
+<area shape="rect" href="Vector_8c.html#a58825d30d6fd35de137a9d7d0c6b5814" title="Tworzy tablicę o pewnej stałej wielkości." alt="" coords="260,600,344,627"/>
+<area shape="rect" href="poly_8h.html#ab3c9ee0f74dabe5ce9d64a6915566eeb" title="Tworzy jednomian ." alt="" coords="409,245,528,272"/>
+<area shape="rect" href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="576,271,667,297"/>
+<area shape="rect" href="poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="715,271,809,297"/>
+<area shape="rect" href="poly_8h.html#a215004f717bcebc9b4e95d20f01f116b" title="Daje wartość wykładnika jendomianu." alt="" coords="416,347,521,373"/>
+<area shape="rect" href="poly_8c.html#a8d08d1aa7cfdd20f9efd6c6d567a3063" title="Podnosi x do potegi exp." alt="" coords="117,701,195,728"/>
+<area shape="rect" href="poly_8c.html#aa9a13ecbdb28cf16c699c27290a7c56c" title="Sumuje listę jednomianów i tworzy z nich wielomian." alt="" coords="243,296,361,323"/>
+<area shape="rect" href="poly_8h.html#aac5948dc82c3a64c55c60831991f7864" title="Tworzy wielomian, który jest współczynnikiem (wielomian stały)." alt="" coords="410,499,527,525"/>
+<area shape="rect" href="poly_8c.html#a6e066ef82f4d7611d7276a6adc8e47ac" title="Mnoży dwa wielomiany." alt="" coords="119,421,193,448"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a295cdeb61c077ea6f408208d331271cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295cdeb61c077ea6f408208d331271cd">&#9670;&nbsp;</a></span>PolyClone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPoly.html">Poly</a> PolyClone </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Robi pełną, głęboką kopię wielomianu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>skopiowany wielomian </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_a295cdeb61c077ea6f408208d331271cd_cgraph.png" border="0" usemap="#poly_8h_a295cdeb61c077ea6f408208d331271cd_cgraph" alt=""/></div>
+<map name="poly_8h_a295cdeb61c077ea6f408208d331271cd_cgraph" id="poly_8h_a295cdeb61c077ea6f408208d331271cd_cgraph">
+<area shape="rect" title="Robi pełną, głęboką kopię wielomianu." alt="" coords="5,31,92,57"/>
+<area shape="rect" href="poly_8h.html#a5f50698912e4cdcf402f7df555f3abad" title="Robi pełną, głęboką kopię jednomianu." alt="" coords="151,5,246,32"/>
+<area shape="rect" href="poly_8h.html#aac5948dc82c3a64c55c60831991f7864" title="Tworzy wielomian, który jest współczynnikiem (wielomian stały)." alt="" coords="140,56,257,83"/>
+<area shape="rect" href="poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="151,107,246,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a10020aea410f5a07374537dbb431d1fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10020aea410f5a07374537dbb431d1fe">&#9670;&nbsp;</a></span>PolyDeg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a> PolyDeg </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca stopień wielomianu (-1 dla wielomianu tożsamościowo równego zeru). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>stopień wielomianu <code>p</code> </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_a10020aea410f5a07374537dbb431d1fe_cgraph.png" border="0" usemap="#poly_8h_a10020aea410f5a07374537dbb431d1fe_cgraph" alt=""/></div>
+<map name="poly_8h_a10020aea410f5a07374537dbb431d1fe_cgraph" id="poly_8h_a10020aea410f5a07374537dbb431d1fe_cgraph">
+<area shape="rect" title="Zwraca stopień wielomianu (&#45;1 dla wielomianu tożsamościowo równego zeru)." alt="" coords="5,124,81,151"/>
+<area shape="rect" href="poly_8c.html#aa5d960354774dc177393b360c0f90aa9" title="Zwraca wiekszy z argumentow." alt="" coords="281,5,331,32"/>
+<area shape="rect" href="poly_8h.html#a215004f717bcebc9b4e95d20f01f116b" title="Daje wartość wykładnika jendomianu." alt="" coords="253,61,359,88"/>
+<area shape="rect" href="poly_8c.html#a10020aea410f5a07374537dbb431d1fe" title="Zwraca stopień wielomianu (&#45;1 dla wielomianu tożsamościowo równego zeru)." alt="" coords="129,124,205,151"/>
+<area shape="rect" href="poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="407,175,501,201"/>
+<area shape="rect" href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="261,175,351,201"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af1d3ea4ed1d054d9fbc4f715bbc64544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d3ea4ed1d054d9fbc4f715bbc64544">&#9670;&nbsp;</a></span>PolyDegBy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="poly_8h.html#a8aeff364e4fc97a215cfe70e36e14c14">poly_exp_t</a> PolyDegBy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>var_idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca stopień wielomianu ze względu na zadaną zmienną (-1 dla wielomianu tożsamościowo równego zeru). </p>
+<p>Zmienne indeksowane są od 0. Zmienna o indeksie 0 oznacza zmienną główną tego wielomianu. Większe indeksy oznaczają zmienne wielomianów znajdujących się we współczynnikach. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">var_idx</td><td>: indeks zmiennej </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>stopień wielomianu <code>p</code> z względu na zmienną o indeksie <code>var_idx</code> </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_af1d3ea4ed1d054d9fbc4f715bbc64544_cgraph.png" border="0" usemap="#poly_8h_af1d3ea4ed1d054d9fbc4f715bbc64544_cgraph" alt=""/></div>
+<map name="poly_8h_af1d3ea4ed1d054d9fbc4f715bbc64544_cgraph" id="poly_8h_af1d3ea4ed1d054d9fbc4f715bbc64544_cgraph">
+<area shape="rect" title="Zwraca stopień wielomianu ze względu na zadaną zmienną (&#45;1 dla wielomianu tożsamościowo równego zeru)..." alt="" coords="5,124,99,151"/>
+<area shape="rect" href="poly_8c.html#aa5d960354774dc177393b360c0f90aa9" title="Zwraca wiekszy z argumentow." alt="" coords="315,5,366,32"/>
+<area shape="rect" href="poly_8h.html#a215004f717bcebc9b4e95d20f01f116b" title="Daje wartość wykładnika jendomianu." alt="" coords="288,61,393,88"/>
+<area shape="rect" href="poly_8c.html#af1d3ea4ed1d054d9fbc4f715bbc64544" title="Zwraca stopień wielomianu ze względu na zadaną zmienną (&#45;1 dla wielomianu tożsamościowo równego zeru)..." alt="" coords="147,124,240,151"/>
+<area shape="rect" href="poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="441,175,536,201"/>
+<area shape="rect" href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="295,175,386,201"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a54faf738d9aa518d1e1d6db6c3142e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54faf738d9aa518d1e1d6db6c3142e3f">&#9670;&nbsp;</a></span>PolyDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PolyDestroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Usuwa wielomian z pamięci. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_a54faf738d9aa518d1e1d6db6c3142e3f_cgraph.png" border="0" usemap="#poly_8h_a54faf738d9aa518d1e1d6db6c3142e3f_cgraph" alt=""/></div>
+<map name="poly_8h_a54faf738d9aa518d1e1d6db6c3142e3f_cgraph" id="poly_8h_a54faf738d9aa518d1e1d6db6c3142e3f_cgraph">
+<area shape="rect" title="Usuwa wielomian z pamięci." alt="" coords="5,55,107,81"/>
+<area shape="rect" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="155,29,256,56"/>
+<area shape="rect" href="poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="304,55,399,81"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aac5948dc82c3a64c55c60831991f7864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac5948dc82c3a64c55c60831991f7864">&#9670;&nbsp;</a></span>PolyFromCoeff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structPoly.html">Poly</a> PolyFromCoeff </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="poly_8h.html#a912dfe9f745aee73326baa53126fd650">poly_coeff_t</a>&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tworzy wielomian, który jest współczynnikiem (wielomian stały). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>: wartość współczynnika </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wielomian </dd></dl>
+
+</div>
+</div>
+<a id="a98512498bdb4679278532e930b727755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98512498bdb4679278532e930b727755">&#9670;&nbsp;</a></span>PolyIsCoeff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool PolyIsCoeff </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Czy wielomian jest współczynnikiem? </dd></dl>
+
+</div>
+</div>
+<a id="a1183de0891f01c491dca485e284a1e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1183de0891f01c491dca485e284a1e6c">&#9670;&nbsp;</a></span>PolyIsEq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PolyIsEq </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>q</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza równość dwóch wielomianów. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian \(p\) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>: wielomian \(q\) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>\(p = q\) </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_a1183de0891f01c491dca485e284a1e6c_cgraph.png" border="0" usemap="#poly_8h_a1183de0891f01c491dca485e284a1e6c_cgraph" alt=""/></div>
+<map name="poly_8h_a1183de0891f01c491dca485e284a1e6c_cgraph" id="poly_8h_a1183de0891f01c491dca485e284a1e6c_cgraph">
+<area shape="rect" title="Sprawdza równość dwóch wielomianów." alt="" coords="5,47,83,74"/>
+<area shape="rect" href="poly_8h.html#a215004f717bcebc9b4e95d20f01f116b" title="Daje wartość wykładnika jendomianu." alt="" coords="256,22,361,48"/>
+<area shape="rect" href="poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="261,84,356,111"/>
+<area shape="rect" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c" title="Sprawdza równość dwóch wielomianów." alt="" coords="131,47,208,74"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaaf60733ab55efe5130da77928fe941d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf60733ab55efe5130da77928fe941d">&#9670;&nbsp;</a></span>PolyIsZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool PolyIsZero </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy wielomian jest tożsamościowo równy zeru. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Czy wielomian jest równy zeru? </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_aaaf60733ab55efe5130da77928fe941d_cgraph.png" border="0" usemap="#poly_8h_aaaf60733ab55efe5130da77928fe941d_cgraph" alt=""/></div>
+<map name="poly_8h_aaaf60733ab55efe5130da77928fe941d_cgraph" id="poly_8h_aaaf60733ab55efe5130da77928fe941d_cgraph">
+<area shape="rect" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="5,5,96,32"/>
+<area shape="rect" href="poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="144,5,239,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6e066ef82f4d7611d7276a6adc8e47ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e066ef82f4d7611d7276a6adc8e47ac">&#9670;&nbsp;</a></span>PolyMul()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPoly.html">Poly</a> PolyMul </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>q</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mnoży dwa wielomiany. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian \(p\) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>: wielomian \(q\) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>\(p * q\) </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_a6e066ef82f4d7611d7276a6adc8e47ac_cgraph.png" border="0" usemap="#poly_8h_a6e066ef82f4d7611d7276a6adc8e47ac_cgraph" alt=""/></div>
+<map name="poly_8h_a6e066ef82f4d7611d7276a6adc8e47ac_cgraph" id="poly_8h_a6e066ef82f4d7611d7276a6adc8e47ac_cgraph">
+<area shape="rect" title="Mnoży dwa wielomiany." alt="" coords="5,347,80,373"/>
+<area shape="rect" href="Vector_8c.html#a20a707d0512c7f3cfde0f63639660615" title="Dodaje jednomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="433,195,534,221"/>
+<area shape="rect" href="Vector_8c.html#a58825d30d6fd35de137a9d7d0c6b5814" title="Tworzy tablicę o pewnej stałej wielkości." alt="" coords="271,549,355,576"/>
+<area shape="rect" href="poly_8h.html#ab3c9ee0f74dabe5ce9d64a6915566eeb" title="Tworzy jednomian ." alt="" coords="424,245,543,272"/>
+<area shape="rect" href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="591,271,681,297"/>
+<area shape="rect" href="poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="729,271,824,297"/>
+<area shape="rect" href="poly_8h.html#a215004f717bcebc9b4e95d20f01f116b" title="Daje wartość wykładnika jendomianu." alt="" coords="431,397,536,424"/>
+<area shape="rect" href="poly_8c.html#aa9a13ecbdb28cf16c699c27290a7c56c" title="Sumuje listę jednomianów i tworzy z nich wielomian." alt="" coords="254,296,373,323"/>
+<area shape="rect" href="poly_8h.html#aac5948dc82c3a64c55c60831991f7864" title="Tworzy wielomian, który jest współczynnikiem (wielomian stały)." alt="" coords="425,448,542,475"/>
+<area shape="rect" href="poly_8c.html#a6e066ef82f4d7611d7276a6adc8e47ac" title="Mnoży dwa wielomiany." alt="" coords="128,391,203,417"/>
+<area shape="rect" href="poly_8c.html#a720365f2069ca32ea4234014c98d6863" title="Mnoży wielomian przez stałą." alt="" coords="251,600,376,627"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a79194d594bd19fae18c7d72a30364b18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79194d594bd19fae18c7d72a30364b18">&#9670;&nbsp;</a></span>PolyNeg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPoly.html">Poly</a> PolyNeg </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca przeciwny wielomian. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian \(p\) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>\(-p\) </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_a79194d594bd19fae18c7d72a30364b18_cgraph.png" border="0" usemap="#poly_8h_a79194d594bd19fae18c7d72a30364b18_cgraph" alt=""/></div>
+<map name="poly_8h_a79194d594bd19fae18c7d72a30364b18_cgraph" id="poly_8h_a79194d594bd19fae18c7d72a30364b18_cgraph">
+<area shape="rect" title="Zwraca przeciwny wielomian." alt="" coords="5,5,81,32"/>
+<area shape="rect" href="poly_8c.html#a720365f2069ca32ea4234014c98d6863" title="Mnoży wielomian przez stałą." alt="" coords="129,5,255,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abd180157f87e1da3669356026bbddc5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd180157f87e1da3669356026bbddc5e">&#9670;&nbsp;</a></span>PolySub()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPoly.html">Poly</a> PolySub </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>q</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odejmuje wielomian od wielomianu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian \(p\) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>: wielomian \(q\) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>\(p - q\) </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_abd180157f87e1da3669356026bbddc5e_cgraph.png" border="0" usemap="#poly_8h_abd180157f87e1da3669356026bbddc5e_cgraph" alt=""/></div>
+<map name="poly_8h_abd180157f87e1da3669356026bbddc5e_cgraph" id="poly_8h_abd180157f87e1da3669356026bbddc5e_cgraph">
+<area shape="rect" title="Odejmuje wielomian od wielomianu." alt="" coords="5,29,80,56"/>
+<area shape="rect" href="poly_8c.html#af659cef51d42c197388e75cd53b57fe5" title="Dodaje pierwszy wielomian do drugiego, pomnożonego przez współczynnik." alt="" coords="128,29,267,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af3229f3aa1f6bffaf25b68c8f7acecb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3229f3aa1f6bffaf25b68c8f7acecb0">&#9670;&nbsp;</a></span>PolyZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structPoly.html">Poly</a> PolyZero </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tworzy wielomian tożsamościowo równy zeru. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>wielomian </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_af3229f3aa1f6bffaf25b68c8f7acecb0_cgraph.png" border="0" usemap="#poly_8h_af3229f3aa1f6bffaf25b68c8f7acecb0_cgraph" alt=""/></div>
+<map name="poly_8h_af3229f3aa1f6bffaf25b68c8f7acecb0_cgraph" id="poly_8h_af3229f3aa1f6bffaf25b68c8f7acecb0_cgraph">
+<area shape="rect" title="Tworzy wielomian tożsamościowo równy zeru." alt="" coords="5,5,85,32"/>
+<area shape="rect" href="poly_8h.html#aac5948dc82c3a64c55c60831991f7864" title="Tworzy wielomian, który jest współczynnikiem (wielomian stały)." alt="" coords="133,5,251,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a205cfc78ca06c3c2d51df8eb4ff2f96f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205cfc78ca06c3c2d51df8eb4ff2f96f">&#9670;&nbsp;</a></span>PrintPoly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PrintPoly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structPoly.html">Poly</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wypisuje wielomian na standardowe wyjście. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: wielomian </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="poly_8h_a205cfc78ca06c3c2d51df8eb4ff2f96f_cgraph.png" border="0" usemap="#poly_8h_a205cfc78ca06c3c2d51df8eb4ff2f96f_cgraph" alt=""/></div>
+<map name="poly_8h_a205cfc78ca06c3c2d51df8eb4ff2f96f_cgraph" id="poly_8h_a205cfc78ca06c3c2d51df8eb4ff2f96f_cgraph">
+<area shape="rect" title="Wypisuje wielomian na standardowe wyjście." alt="" coords="5,6,85,33"/>
+<area shape="rect" href="poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="261,6,356,33"/>
+<area shape="rect" href="poly_8c.html#a205cfc78ca06c3c2d51df8eb4ff2f96f" title="Wypisuje wielomian na standardowe wyjście." alt="" coords="133,44,213,70"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pt, 21 maj 2021 23:01:16 dla Polynomials programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

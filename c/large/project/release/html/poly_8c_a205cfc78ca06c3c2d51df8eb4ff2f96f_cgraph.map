@@ -1,0 +1,4 @@
+<map id="printPoly" name="PrintPoly">
+<area shape="rect" id="node1" title="Wypisuje wielomian na standardowe wyjście." alt="" coords="5,29,85,56"/>
+<area shape="rect" id="node2" href="$poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="133,29,228,56"/>
+</map>

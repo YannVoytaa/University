@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yannvoytaa/duze/IPP-jw429685/src/poly.h
+assert.h
+-
+stdbool.h
+-
+stddef.h
+-
+
+/home/yannvoytaa/duze/IPP-jw429685/src/poly_test.c
+poly.h
+/home/yannvoytaa/duze/IPP-jw429685/src/poly.h
+assert.h
+-
+limits.h
+-
+stdbool.h
+-
+stdarg.h
+-
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+

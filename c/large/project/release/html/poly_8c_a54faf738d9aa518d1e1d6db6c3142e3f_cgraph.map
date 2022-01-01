@@ -1,0 +1,4 @@
+<map id="PolyDestroy" name="PolyDestroy">
+<area shape="rect" id="node1" title="Usuwa wielomian z pamięci." alt="" coords="5,29,107,56"/>
+<area shape="rect" id="node2" href="$poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="155,29,249,56"/>
+</map>

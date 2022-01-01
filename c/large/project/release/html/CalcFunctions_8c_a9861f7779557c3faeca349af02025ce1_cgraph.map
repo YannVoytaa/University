@@ -1,0 +1,25 @@
+<map id="scanOperation" name="scanOperation">
+<area shape="rect" id="node1" title="Wykonuje operację na podstawie linii." alt="" coords="5,587,121,614"/>
+<area shape="rect" id="node2" href="$CalcFunctions_8c.html#a18ae917306cbf348e563e1964f291835" title="Wrzuca na stos wielomian stworzony przez funkcję." alt="" coords="205,258,304,285"/>
+<area shape="rect" id="node3" href="$Stack_8c.html#a0d8e471d67a42dafeb8347463d989237" title="Dodaje wielomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="412,309,465,335"/>
+<area shape="rect" id="node4" href="$CalcFunctions_8c.html#a83f17be10150bd0eb7e793df20c2f19b" title="Sprawdza, czy znak jest biały." alt="" coords="401,410,477,437"/>
+<area shape="rect" id="node5" href="$CalcFunctions_8c.html#ac6415441e61302f8a4ab1d61fc4c0e51" title="Wrzuca na stos wielomian stworzony przez funkcję jednoargumentową" alt="" coords="221,562,289,589"/>
+<area shape="rect" id="node6" href="$poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="388,586,489,613"/>
+<area shape="rect" id="node7" href="$poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="676,317,771,343"/>
+<area shape="rect" id="node8" href="$Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308" title="Zwraca wielomian z góry stosu i go zrzuca." alt="" coords="415,511,462,538"/>
+<area shape="rect" id="node9" href="$Stack_8c.html#a234cb68c95eb0357289537c33788fd0d" title="Zwraca wielomian wrzucony jako ostatni." alt="" coords="417,675,460,702"/>
+<area shape="rect" id="node10" href="$poly_8c.html#afd55434759a46901958eb5ad79b78217" title="Dodaje dwa wielomiany." alt="" coords="217,461,292,487"/>
+<area shape="rect" id="node11" href="$poly_8c.html#a22d1e18efcb1373fe1f0fae77856f488" title="Wylicza wartość wielomianu w punkcie x." alt="" coords="223,106,287,133"/>
+<area shape="rect" id="node12" href="$poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="537,169,628,195"/>
+<area shape="rect" id="node13" href="$poly_8c.html#a6e066ef82f4d7611d7276a6adc8e47ac" title="Mnoży dwa wielomiany." alt="" coords="401,231,476,258"/>
+<area shape="rect" id="node14" href="$poly_8c.html#a295cdeb61c077ea6f408208d331271cd" title="Robi pełną, głęboką kopię wielomianu." alt="" coords="539,473,626,499"/>
+<area shape="rect" id="node15" href="$poly_8c.html#a1183de0891f01c491dca485e284a1e6c" title="Sprawdza równość dwóch wielomianów." alt="" coords="544,706,621,733"/>
+<area shape="rect" id="node16" href="$poly_8c.html#a79194d594bd19fae18c7d72a30364b18" title="Zwraca przeciwny wielomian." alt="" coords="217,765,293,791"/>
+<area shape="rect" id="node17" href="$poly_8c.html#abd180157f87e1da3669356026bbddc5e" title="Odejmuje wielomian od wielomianu." alt="" coords="217,815,292,842"/>
+<area shape="rect" id="node18" href="$poly_8h.html#af3229f3aa1f6bffaf25b68c8f7acecb0" title="Tworzy wielomian tożsamościowo równy zeru." alt="" coords="215,866,295,893"/>
+<area shape="rect" id="node19" href="$poly_8c.html#a205cfc78ca06c3c2d51df8eb4ff2f96f" title="Wypisuje wielomian na standardowe wyjście." alt="" coords="543,1099,623,1126"/>
+<area shape="rect" id="node20" href="$CalcFunctions_8c.html#a80026ac3b5f09ff9041c1f5d82780350" title="Wykonuje operację na podstawie linii." alt="" coords="169,613,340,639"/>
+<area shape="rect" id="node21" href="$CalcFunctions_8c.html#ab664231a4945f671ff620063e7bf63ad" title="Sprawdza, czy prefiks linii jest taki sam jak druga linia." alt="" coords="394,827,483,854"/>
+<area shape="rect" id="node22" href="$CalcFunctions_8c.html#accb46f7ff04df326d492272e7b5258d0" title="Wypisuje pewną własność wielomianu z góry stosu." alt="" coords="205,714,304,741"/>
+<area shape="rect" id="node23" href="$CalcFunctions_8c.html#a57edcb0ff953cab100901afa7f98bd51" title="Wrzuca na stos wielomian stworzony przez funkcję dwuargumentową" alt="" coords="217,410,292,437"/>
+</map>

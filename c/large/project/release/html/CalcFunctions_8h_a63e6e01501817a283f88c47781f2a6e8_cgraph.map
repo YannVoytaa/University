@@ -1,0 +1,5 @@
+<map id="badPoly" name="badPoly">
+<area shape="rect" id="node1" title="Zaznacza, że na wejściu został podany błędny wielomian i czyści pamięć poświęconą na tworzenie wielom..." alt="" coords="5,55,80,81"/>
+<area shape="rect" id="node2" href="$poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="128,29,229,56"/>
+<area shape="rect" id="node3" href="$poly_8h.html#af3229f3aa1f6bffaf25b68c8f7acecb0" title="Tworzy wielomian tożsamościowo równy zeru." alt="" coords="139,80,219,107"/>
+</map>

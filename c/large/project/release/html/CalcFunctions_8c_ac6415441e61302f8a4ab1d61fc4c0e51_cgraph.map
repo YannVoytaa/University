@@ -1,0 +1,7 @@
+<map id="oneArg" name="oneArg">
+<area shape="rect" id="node1" title="Wrzuca na stos wielomian stworzony przez funkcję jednoargumentową" alt="" coords="5,105,73,132"/>
+<area shape="rect" id="node2" href="$poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="121,29,223,56"/>
+<area shape="rect" id="node3" href="$Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308" title="Zwraca wielomian z góry stosu i go zrzuca." alt="" coords="149,80,195,107"/>
+<area shape="rect" id="node4" href="$Stack_8c.html#a0d8e471d67a42dafeb8347463d989237" title="Dodaje wielomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="145,131,199,157"/>
+<area shape="rect" id="node5" href="$Stack_8c.html#a234cb68c95eb0357289537c33788fd0d" title="Zwraca wielomian wrzucony jako ostatni." alt="" coords="151,181,193,208"/>
+</map>

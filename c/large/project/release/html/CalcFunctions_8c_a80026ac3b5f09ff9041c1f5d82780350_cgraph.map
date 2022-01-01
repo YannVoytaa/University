@@ -1,0 +1,10 @@
+<map id="scanIrregularOperation" name="scanIrregularOperation">
+<area shape="rect" id="node1" title="Wykonuje operację na podstawie linii." alt="" coords="5,229,176,256"/>
+<area shape="rect" id="node2" href="$CalcFunctions_8c.html#a83f17be10150bd0eb7e793df20c2f19b" title="Sprawdza, czy znak jest biały." alt="" coords="237,5,313,32"/>
+<area shape="rect" id="node3" href="$poly_8c.html#a10020aea410f5a07374537dbb431d1fe" title="Zwraca stopień wielomianu (&#45;1 dla wielomianu tożsamościowo równego zeru)." alt="" coords="237,80,313,107"/>
+<area shape="rect" id="node4" href="$poly_8c.html#af1d3ea4ed1d054d9fbc4f715bbc64544" title="Zwraca stopień wielomianu ze względu na zadaną zmienną (&#45;1 dla wielomianu tożsamościowo równego zeru)..." alt="" coords="228,155,321,181"/>
+<area shape="rect" id="node5" href="$poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="224,229,325,256"/>
+<area shape="rect" id="node6" href="$Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308" title="Zwraca wielomian z góry stosu i go zrzuca." alt="" coords="251,280,298,307"/>
+<area shape="rect" id="node7" href="$CalcFunctions_8c.html#ab664231a4945f671ff620063e7bf63ad" title="Sprawdza, czy prefiks linii jest taki sam jak druga linia." alt="" coords="230,331,319,357"/>
+<area shape="rect" id="node8" href="$Stack_8c.html#a234cb68c95eb0357289537c33788fd0d" title="Zwraca wielomian wrzucony jako ostatni." alt="" coords="253,381,296,408"/>
+</map>

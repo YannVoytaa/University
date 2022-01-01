@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Polynomials: Dokumentacja pliku calc.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Polynomials
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku calc.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;expat.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="poly_8h_source.html">poly.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Stack_8h_source.html">Stack.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Vector_8h_source.html">Vector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="CalcFunctions_8h_source.html">CalcFunctions.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla calc.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="calc_8c__incl.png" border="0" usemap="#calc_8c" alt=""/></div>
+<map name="calc_8c" id="calc_8c">
+<area shape="rect" title=" " alt="" coords="271,5,329,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,72,107"/>
+<area shape="rect" title=" " alt="" coords="97,80,167,107"/>
+<area shape="rect" title=" " alt="" coords="191,80,262,107"/>
+<area shape="rect" href="poly_8h.html" title=" " alt="" coords="343,155,403,181"/>
+<area shape="rect" href="Stack_8h.html" title=" " alt="" coords="338,80,409,107"/>
+<area shape="rect" href="Vector_8h.html" title=" " alt="" coords="457,80,532,107"/>
+<area shape="rect" href="CalcFunctions_8h.html" title=" " alt="" coords="557,80,681,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a369266c24eacffb87046522897a570d5"><td class="memItemLeft" align="right" valign="top"><a id="a369266c24eacffb87046522897a570d5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc_8c.html#a369266c24eacffb87046522897a570d5">_GNU_SOURCE</a></td></tr>
+<tr class="memdesc:a369266c24eacffb87046522897a570d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">bez ponizszego makro wystepuje warning dla getline <br /></td></tr>
+<tr class="separator:a369266c24eacffb87046522897a570d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa6724360f3351cdc337471d90c7d7b1"><td class="memItemLeft" align="right" valign="top"><a id="afa6724360f3351cdc337471d90c7d7b1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc_8c.html#afa6724360f3351cdc337471d90c7d7b1">INITIAL_BUFSIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:afa6724360f3351cdc337471d90c7d7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domyślna długość linii. <br /></td></tr>
+<tr class="separator:afa6724360f3351cdc337471d90c7d7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calc_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Obsługa wejścia kalkulatora wielamianów wielu zmiennych. </p><dl class="section author"><dt>Autor</dt><dd>Jan Wojtach </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>2021 </dd></dl>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>nie dotarliśmy do końca linii</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="calc_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#calc_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
+<map name="calc_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="calc_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,259,60,285"/>
+<area shape="rect" href="Stack_8c.html#a26fbf51db1dc3c9b92db1b2a6274d631" title="Usuwa stos z pamięci." alt="" coords="118,5,225,32"/>
+<area shape="rect" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="283,56,384,83"/>
+<area shape="rect" href="CalcFunctions_8c.html#a3cfacb6081af5787f4f2236559764f0e" title="Sprawdza, czy w linii znajduje się \0 (w środku linii)." alt="" coords="133,107,209,133"/>
+<area shape="rect" href="Stack_8c.html#a89de2ef2dbe596d9649f72f219f47e1c" title="Tworzy tablicę o pewnej stałej wielkości." alt="" coords="132,157,211,184"/>
+<area shape="rect" href="CalcFunctions_8c.html#acd6f5c21e24ac959fb123ec4df931e03" title="Sprawdza, czy linia jest komentarzem (zaczyna się hashem)." alt="" coords="120,208,223,235"/>
+<area shape="rect" href="CalcFunctions_8c.html#a28fae96556eaf5444390af49ae3fd40a" title="Sprawdza, czy linia jest pusta." alt="" coords="130,259,213,285"/>
+<area shape="rect" href="CalcFunctions_8c.html#a6eba404767b6677b37ef06843e39108f" title="Wypisuje błąd na podstawie informacji." alt="" coords="130,309,213,336"/>
+<area shape="rect" href="Stack_8c.html#a0d8e471d67a42dafeb8347463d989237" title="Dodaje wielomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="307,385,360,412"/>
+<area shape="rect" href="CalcFunctions_8c.html#a9861f7779557c3faeca349af02025ce1" title="Wykonuje operację na podstawie linii." alt="" coords="113,360,229,387"/>
+<area shape="rect" href="CalcFunctions_8c.html#a0663045e0abb84063f1ef3459ec0d4a0" title="Wczytuje wielomian z linii." alt="" coords="131,461,211,488"/>
+<area shape="rect" href="CalcFunctions_8c.html#ab0cad87e5fbd691bbe450622509ff592" title="Sprawdza, czy linia zaczyna się od litery." alt="" coords="108,512,235,539"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pt, 21 maj 2021 23:01:16 dla Polynomials programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

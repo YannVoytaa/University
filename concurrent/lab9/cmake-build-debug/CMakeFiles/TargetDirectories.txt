@@ -1,0 +1,10 @@
+/home/yannvoytaa/CLionProjects/lab9/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/yannvoytaa/CLionProjects/lab9/cmake-build-debug/CMakeFiles/install/local.dir
+/home/yannvoytaa/CLionProjects/lab9/cmake-build-debug/CMakeFiles/install.dir
+/home/yannvoytaa/CLionProjects/lab9/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/yannvoytaa/CLionProjects/lab9/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yannvoytaa/CLionProjects/lab9/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/yannvoytaa/CLionProjects/lab9/cmake-build-debug/CMakeFiles/primes.dir
+/home/yannvoytaa/CLionProjects/lab9/cmake-build-debug/CMakeFiles/producer-consumer.dir
+/home/yannvoytaa/CLionProjects/lab9/cmake-build-debug/CMakeFiles/err.dir
+/home/yannvoytaa/CLionProjects/lab9/cmake-build-debug/CMakeFiles/readers-writers-template.dir

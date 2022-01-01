@@ -1,0 +1,13 @@
+<map id="PolyAddMonos" name="PolyAddMonos">
+<area shape="rect" id="node1" title="Sumuje listę jednomianów i tworzy z nich wielomian." alt="" coords="5,233,124,260"/>
+<area shape="rect" id="node2" href="$Vector_8c.html#a20a707d0512c7f3cfde0f63639660615" title="Dodaje jednomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="197,5,299,32"/>
+<area shape="rect" id="node3" href="$poly_8c.html#a6f91b4cd1af5dc277444c465e2ca3ab6" title="Porównuje jednomieny względem wykładników." alt="" coords="223,107,273,133"/>
+<area shape="rect" id="node4" href="$poly_8h.html#a215004f717bcebc9b4e95d20f01f116b" title="Daje wartość wykładnika jendomianu." alt="" coords="378,107,483,133"/>
+<area shape="rect" id="node5" href="$Vector_8c.html#ae9160cf2aa6becf7db03a8deb7d9c357" title="Tworzy tablicę wielkości count." alt="" coords="172,259,324,285"/>
+<area shape="rect" id="node6" href="$poly_8h.html#a0bcd38ab44736f6e230b04b4eaec000a" title="Usuwa jednomian z pamięci." alt="" coords="193,309,303,336"/>
+<area shape="rect" id="node7" href="$poly_8h.html#ab3c9ee0f74dabe5ce9d64a6915566eeb" title="Tworzy jednomian ." alt="" coords="189,411,307,437"/>
+<area shape="rect" id="node8" href="$poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="385,385,476,412"/>
+<area shape="rect" id="node9" href="$poly_8c.html#afd55434759a46901958eb5ad79b78217" title="Dodaje dwa wielomiany." alt="" coords="211,461,285,488"/>
+<area shape="rect" id="node10" href="$poly_8h.html#aac5948dc82c3a64c55c60831991f7864" title="Tworzy wielomian, który jest współczynnikiem (wielomian stały)." alt="" coords="372,183,489,209"/>
+<area shape="rect" id="node11" href="$poly_8c.html#a731d4c58953e6021b072235a8b2362cc" title="Tworzy wielomian z posortowanej rosnąco dynamicznej tablicy jednomianów." alt="" coords="186,157,310,184"/>
+</map>

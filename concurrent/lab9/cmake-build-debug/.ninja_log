@@ -1,0 +1,9 @@
+# ninja log v5
+60	96	1639659622534310003	readers-writers-template	f0c856f5a7291627
+1	60	1639659622498310100	CMakeFiles/readers-writers-template.dir/readers-writers-template.c.o	81c47618a40fec1f
+59	104	1639046810607709856	producer-consumer	7fb72c3b30e84e11
+0	43	1639046267117680366	CMakeFiles/err.dir/err.c.o	3970e4c6a92ea7b3
+43	50	1639046267125680337	liberr.a	de01923821a4a581
+0	58	1639046810563710015	CMakeFiles/producer-consumer.dir/producer-consumer.c.o	f58700d9aa65b994
+0	53	1639046267129680322	CMakeFiles/primes.dir/primes.c.o	293fe3ddb288adf8
+53	71	1639046267145680263	primes	800816dfc06744d2

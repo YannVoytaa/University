@@ -1,0 +1,6 @@
+<map id="PolyClone" name="PolyClone">
+<area shape="rect" id="node1" title="Robi pełną, głęboką kopię wielomianu." alt="" coords="5,56,92,83"/>
+<area shape="rect" id="node2" href="$poly_8h.html#a5f50698912e4cdcf402f7df555f3abad" title="Robi pełną, głęboką kopię jednomianu." alt="" coords="151,5,246,32"/>
+<area shape="rect" id="node3" href="$poly_8h.html#aac5948dc82c3a64c55c60831991f7864" title="Tworzy wielomian, który jest współczynnikiem (wielomian stały)." alt="" coords="140,56,257,83"/>
+<area shape="rect" id="node4" href="$poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="151,107,246,133"/>
+</map>

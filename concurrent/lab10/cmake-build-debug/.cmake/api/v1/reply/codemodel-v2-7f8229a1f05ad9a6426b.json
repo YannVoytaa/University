@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MIMUW-SHMSEM",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "err::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-err-Debug-cadfdce5989ab422ce88.json",
+					"name" : "err",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "get_memory::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-get_memory-Debug-3ad700762b86f800aa55.json",
+					"name" : "get_memory",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gifts::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gifts-Debug-76d7929cf5c27386163b.json",
+					"name" : "gifts",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "send_message::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-send_message-Debug-a562f57d0ecfa10bf0e7.json",
+					"name" : "send_message",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "send_message_no_inheritance::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-send_message_no_inheritance-Debug-76b7d853965d0b2764f2.json",
+					"name" : "send_message_no_inheritance",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "send_message_protected::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-send_message_protected-Debug-04d26603bac6dfcfcf5f.json",
+					"name" : "send_message_protected",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "unnamed_memory::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-unnamed_memory-Debug-c11f7709f4c62b8abb72.json",
+					"name" : "unnamed_memory",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "unnamed_memory_protected::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-unnamed_memory_protected-Debug-9fbe4805f93e9866e4f7.json",
+					"name" : "unnamed_memory_protected",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug",
+		"source" : "/home/yannvoytaa/CLionProjects/lab10"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

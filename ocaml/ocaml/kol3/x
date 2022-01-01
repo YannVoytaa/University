@@ -1,0 +1,52 @@
+let pref tab=
+    let n=Array.length tab
+    and
+    m=Array.length (tab.(0))
+    in
+    let p=Array.make_matrix n m 0
+    in
+    for i=0 to n-1 do
+        for j=0 to m-1 do
+            let gorny=if i>0 then p.(i-1).(j) else 0
+            and lewy=if j>0 then p.(i).(j-1) else 0
+            and skos=if i>0 && j>0 then p.(i-1).(j-1) else 0
+            in
+            p.(i).(j)<-tab.(i).(j)+gorny+lewy-skos;
+        done;
+    done;
+    p;;
+
+let suma_prostokatu (poczx,poczy) (konx,kony) prefx=
+    let gorny=if poczx>0 then prefx.(poczx-1).(kony) else 0
+    and lewy=if poczy>0 then prefx.(konx).(poczy-1) else 0
+    and skos=if poczx>0 && poczy>0 then prefx.(poczx-1).(poczy-1) else 0
+    in
+    prefx.(konx).(kony)-gorny-lewy+skos;;
+
+let checksuma i j k p=
+    let x=ref 1 and lokalny_max=ref min_int
+    in
+    while (!x)*(!x)<=k do
+      if k mod (!x)=0 then begin
+          lokalny_max:=max (!lokalny_max) (suma_prostokatu (i-(!x)+1,j-k/(!x)+1) (i,j) p);
+          lokalny_max:=max (!lokalny_max) (suma_prostokatu (i-k/(!x)+1,j-(!x)+1) (i,j) p);
+      end;
+      x:=(!x)+1;
+    done;
+    !lokalny_max;;
+
+let orzechy k tab=
+    let p=pref tab
+    and
+    n=Array.length tab
+    and
+    m=Array.length (tab.(0))
+    and
+    maksik=ref min_int
+    in
+    for i=0 to n-1 do
+        for j=0 to m-1 do
+            maksik:=max (!maksik) (checksuma i j k p)
+        done;
+    done;
+    maksik;;

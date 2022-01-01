@@ -1,0 +1,7 @@
+<map id="PolyDegBy" name="PolyDegBy">
+<area shape="rect" id="node1" title="Zwraca stopień wielomianu ze względu na zadaną zmienną (&#45;1 dla wielomianu tożsamościowo równego zeru)..." alt="" coords="5,81,99,108"/>
+<area shape="rect" id="node2" href="$poly_8c.html#aa5d960354774dc177393b360c0f90aa9" title="Zwraca wiekszy z argumentow." alt="" coords="174,5,225,32"/>
+<area shape="rect" id="node3" href="$poly_8h.html#a215004f717bcebc9b4e95d20f01f116b" title="Daje wartość wykładnika jendomianu." alt="" coords="147,56,252,83"/>
+<area shape="rect" id="node4" href="$poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="300,132,395,159"/>
+<area shape="rect" id="node5" href="$poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="154,157,245,184"/>
+</map>

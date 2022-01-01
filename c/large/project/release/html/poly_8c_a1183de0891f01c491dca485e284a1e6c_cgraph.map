@@ -1,0 +1,5 @@
+<map id="PolyIsEq" name="PolyIsEq">
+<area shape="rect" id="node1" title="Sprawdza równość dwóch wielomianów." alt="" coords="5,31,83,57"/>
+<area shape="rect" id="node2" href="$poly_8h.html#a215004f717bcebc9b4e95d20f01f116b" title="Daje wartość wykładnika jendomianu." alt="" coords="131,5,236,32"/>
+<area shape="rect" id="node3" href="$poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="136,56,231,83"/>
+</map>

@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wall -g -rdynamic CMakeFiles/fork.dir/fork.c.o -o fork  liberr.a 

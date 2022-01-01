@@ -1,0 +1,1094 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Polynomials: Dokumentacja pliku CalcFunctions.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Polynomials
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku CalcFunctions.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="poly_8h_source.html">poly.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Stack_8h_source.html">Stack.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Vector_8h_source.html">Vector.h</a>&quot;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;expat.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="CalcFunctions_8h_source.html">CalcFunctions.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla CalcFunctions.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="CalcFunctions_8c__incl.png" border="0" usemap="#CalcFunctions_8c" alt=""/></div>
+<map name="CalcFunctions_8c" id="CalcFunctions_8c">
+<area shape="rect" title=" " alt="" coords="295,5,418,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,76,107"/>
+<area shape="rect" href="poly_8h.html" title=" " alt="" coords="157,155,217,181"/>
+<area shape="rect" href="Stack_8h.html" title=" " alt="" coords="152,80,223,107"/>
+<area shape="rect" href="Vector_8h.html" title=" " alt="" coords="271,80,346,107"/>
+<area shape="rect" title=" " alt="" coords="371,80,439,107"/>
+<area shape="rect" title=" " alt="" coords="463,80,530,107"/>
+<area shape="rect" title=" " alt="" coords="555,80,625,107"/>
+<area shape="rect" href="CalcFunctions_8h.html" title=" " alt="" coords="649,80,773,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:ae6274263cb5a5f7b997ba8470a89a34f"><td class="memItemLeft" align="right" valign="top"><a id="ae6274263cb5a5f7b997ba8470a89a34f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#ae6274263cb5a5f7b997ba8470a89a34f">EXP_MAX</a>&#160;&#160;&#160;2147483647</td></tr>
+<tr class="memdesc:ae6274263cb5a5f7b997ba8470a89a34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">maksymalna wartość wykładnika <br /></td></tr>
+<tr class="separator:ae6274263cb5a5f7b997ba8470a89a34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ccddbe1ae3699f7236fd52cf75629d"><td class="memItemLeft" align="right" valign="top"><a id="ad9ccddbe1ae3699f7236fd52cf75629d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#ad9ccddbe1ae3699f7236fd52cf75629d">LOWER_LOWERCASE_LETTER_LIMIT</a>&#160;&#160;&#160;(char)97</td></tr>
+<tr class="memdesc:ad9ccddbe1ae3699f7236fd52cf75629d"><td class="mdescLeft">&#160;</td><td class="mdescRight">litera 'a' - najmniejsza mała litera <br /></td></tr>
+<tr class="separator:ad9ccddbe1ae3699f7236fd52cf75629d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e5a3fc02f41198c06e39f980995c75"><td class="memItemLeft" align="right" valign="top"><a id="ac3e5a3fc02f41198c06e39f980995c75"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#ac3e5a3fc02f41198c06e39f980995c75">UPPER_LOWERCASE_LETTER_LIMIT</a>&#160;&#160;&#160;(char)122</td></tr>
+<tr class="memdesc:ac3e5a3fc02f41198c06e39f980995c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">litera 'z' - największa mała litera <br /></td></tr>
+<tr class="separator:ac3e5a3fc02f41198c06e39f980995c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae729501698722a58157df37505f7c404"><td class="memItemLeft" align="right" valign="top"><a id="ae729501698722a58157df37505f7c404"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#ae729501698722a58157df37505f7c404">UPPER_UPPERCASE_LETTER_LIMIT</a>&#160;&#160;&#160;(char)90</td></tr>
+<tr class="memdesc:ae729501698722a58157df37505f7c404"><td class="mdescLeft">&#160;</td><td class="mdescRight">litera 'A' - najmniejsza wielka litera <br /></td></tr>
+<tr class="separator:ae729501698722a58157df37505f7c404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2374e02aecde02c1c746afa644b3ae80"><td class="memItemLeft" align="right" valign="top"><a id="a2374e02aecde02c1c746afa644b3ae80"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a2374e02aecde02c1c746afa644b3ae80">LOWER_UPPERCASE_LETTER_LIMIT</a>&#160;&#160;&#160;(char)65</td></tr>
+<tr class="memdesc:a2374e02aecde02c1c746afa644b3ae80"><td class="mdescLeft">&#160;</td><td class="mdescRight">litera 'Z' - największa wielka litera <br /></td></tr>
+<tr class="separator:a2374e02aecde02c1c746afa644b3ae80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91fa39f7389ad8ad63b09138ca799f8c"><td class="memItemLeft" align="right" valign="top"><a id="a91fa39f7389ad8ad63b09138ca799f8c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a91fa39f7389ad8ad63b09138ca799f8c">LOWER_WHITE_LIMIT</a>&#160;&#160;&#160;(char)9</td></tr>
+<tr class="memdesc:a91fa39f7389ad8ad63b09138ca799f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">najmniejszy kod ascii białego znaku <br /></td></tr>
+<tr class="separator:a91fa39f7389ad8ad63b09138ca799f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795d3ece04dba64c1f43805374da049d"><td class="memItemLeft" align="right" valign="top"><a id="a795d3ece04dba64c1f43805374da049d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a795d3ece04dba64c1f43805374da049d">UPPER_WHITE_LIMIT</a>&#160;&#160;&#160;(char)13</td></tr>
+<tr class="memdesc:a795d3ece04dba64c1f43805374da049d"><td class="mdescLeft">&#160;</td><td class="mdescRight">największy kod ascii białego znaku <br /></td></tr>
+<tr class="separator:a795d3ece04dba64c1f43805374da049d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff6e798033f03e74730e99f01936f84"><td class="memItemLeft" align="right" valign="top"><a id="a5ff6e798033f03e74730e99f01936f84"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a5ff6e798033f03e74730e99f01936f84">SPACE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:a5ff6e798033f03e74730e99f01936f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">kod ascii spacji <br /></td></tr>
+<tr class="separator:a5ff6e798033f03e74730e99f01936f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7172fe24d1ffc31d15b20a77ea9f34dd"><td class="memItemLeft" align="right" valign="top"><a id="a7172fe24d1ffc31d15b20a77ea9f34dd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a7172fe24d1ffc31d15b20a77ea9f34dd">HASH</a>&#160;&#160;&#160;'#'</td></tr>
+<tr class="memdesc:a7172fe24d1ffc31d15b20a77ea9f34dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Znak Hashtag '#'. <br /></td></tr>
+<tr class="separator:a7172fe24d1ffc31d15b20a77ea9f34dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a83f17be10150bd0eb7e793df20c2f19b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a83f17be10150bd0eb7e793df20c2f19b">isWhite</a> (const char *c)</td></tr>
+<tr class="memdesc:a83f17be10150bd0eb7e793df20c2f19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy znak jest biały.  <a href="CalcFunctions_8c.html#a83f17be10150bd0eb7e793df20c2f19b">Więcej...</a><br /></td></tr>
+<tr class="separator:a83f17be10150bd0eb7e793df20c2f19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb8fdb8a951b3849409dfecfa64a498"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a6bb8fdb8a951b3849409dfecfa64a498">is_digit</a> (const char *c)</td></tr>
+<tr class="memdesc:a6bb8fdb8a951b3849409dfecfa64a498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy znak jest cyfrą.  <a href="CalcFunctions_8c.html#a6bb8fdb8a951b3849409dfecfa64a498">Więcej...</a><br /></td></tr>
+<tr class="separator:a6bb8fdb8a951b3849409dfecfa64a498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0cad87e5fbd691bbe450622509ff592"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#ab0cad87e5fbd691bbe450622509ff592">startsWithLetter</a> (char *s)</td></tr>
+<tr class="memdesc:ab0cad87e5fbd691bbe450622509ff592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy linia zaczyna się od litery.  <a href="CalcFunctions_8c.html#ab0cad87e5fbd691bbe450622509ff592">Więcej...</a><br /></td></tr>
+<tr class="separator:ab0cad87e5fbd691bbe450622509ff592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6f5c21e24ac959fb123ec4df931e03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#acd6f5c21e24ac959fb123ec4df931e03">isComment</a> (const char *s)</td></tr>
+<tr class="memdesc:acd6f5c21e24ac959fb123ec4df931e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy linia jest komentarzem (zaczyna się hashem).  <a href="CalcFunctions_8c.html#acd6f5c21e24ac959fb123ec4df931e03">Więcej...</a><br /></td></tr>
+<tr class="separator:acd6f5c21e24ac959fb123ec4df931e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fae96556eaf5444390af49ae3fd40a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a28fae96556eaf5444390af49ae3fd40a">isEmpty</a> (char *s, int size)</td></tr>
+<tr class="memdesc:a28fae96556eaf5444390af49ae3fd40a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy linia jest pusta.  <a href="CalcFunctions_8c.html#a28fae96556eaf5444390af49ae3fd40a">Więcej...</a><br /></td></tr>
+<tr class="separator:a28fae96556eaf5444390af49ae3fd40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfacb6081af5787f4f2236559764f0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a3cfacb6081af5787f4f2236559764f0e">hasNull</a> (char *s, size_t ind)</td></tr>
+<tr class="memdesc:a3cfacb6081af5787f4f2236559764f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy w linii znajduje się \0 (w środku linii).  <a href="CalcFunctions_8c.html#a3cfacb6081af5787f4f2236559764f0e">Więcej...</a><br /></td></tr>
+<tr class="separator:a3cfacb6081af5787f4f2236559764f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab664231a4945f671ff620063e7bf63ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#ab664231a4945f671ff620063e7bf63ad">startsWith</a> (char *s1, char *s2)</td></tr>
+<tr class="memdesc:ab664231a4945f671ff620063e7bf63ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy prefiks linii jest taki sam jak druga linia.  <a href="CalcFunctions_8c.html#ab664231a4945f671ff620063e7bf63ad">Więcej...</a><br /></td></tr>
+<tr class="separator:ab664231a4945f671ff620063e7bf63ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb46f7ff04df326d492272e7b5258d0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#accb46f7ff04df326d492272e7b5258d0">topAndPrint</a> (struct <a class="el" href="structStack.html">Stack</a> *p, bool(*fun)(const <a class="el" href="structPoly.html">Poly</a> *), int *error)</td></tr>
+<tr class="memdesc:accb46f7ff04df326d492272e7b5258d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wypisuje pewną własność wielomianu z góry stosu.  <a href="CalcFunctions_8c.html#accb46f7ff04df326d492272e7b5258d0">Więcej...</a><br /></td></tr>
+<tr class="separator:accb46f7ff04df326d492272e7b5258d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ae917306cbf348e563e1964f291835"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a18ae917306cbf348e563e1964f291835">getAndPush</a> (struct <a class="el" href="structStack.html">Stack</a> *p, <a class="el" href="structPoly.html">Poly</a>(*fun)())</td></tr>
+<tr class="memdesc:a18ae917306cbf348e563e1964f291835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrzuca na stos wielomian stworzony przez funkcję.  <a href="CalcFunctions_8c.html#a18ae917306cbf348e563e1964f291835">Więcej...</a><br /></td></tr>
+<tr class="separator:a18ae917306cbf348e563e1964f291835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6415441e61302f8a4ab1d61fc4c0e51"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#ac6415441e61302f8a4ab1d61fc4c0e51">oneArg</a> (struct <a class="el" href="structStack.html">Stack</a> *p, <a class="el" href="structPoly.html">Poly</a>(*fun)(const <a class="el" href="structPoly.html">Poly</a> *), int *error, int shouldPop)</td></tr>
+<tr class="memdesc:ac6415441e61302f8a4ab1d61fc4c0e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrzuca na stos wielomian stworzony przez funkcję jednoargumentową  <a href="CalcFunctions_8c.html#ac6415441e61302f8a4ab1d61fc4c0e51">Więcej...</a><br /></td></tr>
+<tr class="separator:ac6415441e61302f8a4ab1d61fc4c0e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57edcb0ff953cab100901afa7f98bd51"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a57edcb0ff953cab100901afa7f98bd51">twoArgs</a> (struct <a class="el" href="structStack.html">Stack</a> *p, <a class="el" href="structPoly.html">Poly</a>(*fun)(const <a class="el" href="structPoly.html">Poly</a> *, const <a class="el" href="structPoly.html">Poly</a> *), int *error)</td></tr>
+<tr class="memdesc:a57edcb0ff953cab100901afa7f98bd51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrzuca na stos wielomian stworzony przez funkcję dwuargumentową  <a href="CalcFunctions_8c.html#a57edcb0ff953cab100901afa7f98bd51">Więcej...</a><br /></td></tr>
+<tr class="separator:a57edcb0ff953cab100901afa7f98bd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80026ac3b5f09ff9041c1f5d82780350"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a80026ac3b5f09ff9041c1f5d82780350">scanIrregularOperation</a> (char *s, struct <a class="el" href="structStack.html">Stack</a> *p, int *error)</td></tr>
+<tr class="memdesc:a80026ac3b5f09ff9041c1f5d82780350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wykonuje operację na podstawie linii.  <a href="CalcFunctions_8c.html#a80026ac3b5f09ff9041c1f5d82780350">Więcej...</a><br /></td></tr>
+<tr class="separator:a80026ac3b5f09ff9041c1f5d82780350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9861f7779557c3faeca349af02025ce1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a9861f7779557c3faeca349af02025ce1">scanOperation</a> (char *s, struct <a class="el" href="structStack.html">Stack</a> *p, int *error)</td></tr>
+<tr class="memdesc:a9861f7779557c3faeca349af02025ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wykonuje operację na podstawie linii.  <a href="CalcFunctions_8c.html#a9861f7779557c3faeca349af02025ce1">Więcej...</a><br /></td></tr>
+<tr class="separator:a9861f7779557c3faeca349af02025ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eba404767b6677b37ef06843e39108f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a6eba404767b6677b37ef06843e39108f">printError</a> (int error, int ind)</td></tr>
+<tr class="memdesc:a6eba404767b6677b37ef06843e39108f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wypisuje błąd na podstawie informacji.  <a href="CalcFunctions_8c.html#a6eba404767b6677b37ef06843e39108f">Więcej...</a><br /></td></tr>
+<tr class="separator:a6eba404767b6677b37ef06843e39108f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e6e01501817a283f88c47781f2a6e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a63e6e01501817a283f88c47781f2a6e8">badPoly</a> (int *error, struct <a class="el" href="structVector.html">Vector</a> *v)</td></tr>
+<tr class="memdesc:a63e6e01501817a283f88c47781f2a6e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zaznacza, że na wejściu został podany błędny wielomian i czyści pamięć poświęconą na tworzenie wielomianu.  <a href="CalcFunctions_8c.html#a63e6e01501817a283f88c47781f2a6e8">Więcej...</a><br /></td></tr>
+<tr class="separator:a63e6e01501817a283f88c47781f2a6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfc03b0ffd18b44d68ce746f7b8d0f2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#aecfc03b0ffd18b44d68ce746f7b8d0f2">scanMonos</a> (char **s, int *error)</td></tr>
+<tr class="memdesc:aecfc03b0ffd18b44d68ce746f7b8d0f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wczytuje wielomian z linii zakładając, że składa się z jednomianów.  <a href="CalcFunctions_8c.html#aecfc03b0ffd18b44d68ce746f7b8d0f2">Więcej...</a><br /></td></tr>
+<tr class="separator:aecfc03b0ffd18b44d68ce746f7b8d0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a735f24f4a922448d74c64a72edff618c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a735f24f4a922448d74c64a72edff618c">scanCoeff</a> (char **s, int *error)</td></tr>
+<tr class="memdesc:a735f24f4a922448d74c64a72edff618c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wczytuje wielomian z linii zakładając, że jest współczynnikiem.  <a href="CalcFunctions_8c.html#a735f24f4a922448d74c64a72edff618c">Więcej...</a><br /></td></tr>
+<tr class="separator:a735f24f4a922448d74c64a72edff618c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0663045e0abb84063f1ef3459ec0d4a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPoly.html">Poly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CalcFunctions_8c.html#a0663045e0abb84063f1ef3459ec0d4a0">scanPoly</a> (char **s, int *error)</td></tr>
+<tr class="memdesc:a0663045e0abb84063f1ef3459ec0d4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wczytuje wielomian z linii.  <a href="CalcFunctions_8c.html#a0663045e0abb84063f1ef3459ec0d4a0">Więcej...</a><br /></td></tr>
+<tr class="separator:a0663045e0abb84063f1ef3459ec0d4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Implementacja kalkulatora wielamianów wielu zmiennych. </p><dl class="section author"><dt>Autor</dt><dd>Jan Wojtach </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>2021 </dd></dl>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a63e6e01501817a283f88c47781f2a6e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63e6e01501817a283f88c47781f2a6e8">&#9670;&nbsp;</a></span>badPoly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPoly.html">Poly</a> badPoly </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structVector.html">Vector</a> *&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zaznacza, że na wejściu został podany błędny wielomian i czyści pamięć poświęconą na tworzenie wielomianu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>: wskaźnik na miejsce przechowujące kod błędu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>: wektor, który trzeba wyczyścić </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wielomian-atrapa (potrzebny, by zwracana wartość się zgadzała, jednak nigdy się nie przyda) </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="CalcFunctions_8c_a63e6e01501817a283f88c47781f2a6e8_cgraph.png" border="0" usemap="#CalcFunctions_8c_a63e6e01501817a283f88c47781f2a6e8_cgraph" alt=""/></div>
+<map name="CalcFunctions_8c_a63e6e01501817a283f88c47781f2a6e8_cgraph" id="CalcFunctions_8c_a63e6e01501817a283f88c47781f2a6e8_cgraph">
+<area shape="rect" title="Zaznacza, że na wejściu został podany błędny wielomian i czyści pamięć poświęconą na tworzenie wielom..." alt="" coords="5,55,80,81"/>
+<area shape="rect" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="128,29,229,56"/>
+<area shape="rect" href="poly_8h.html#af3229f3aa1f6bffaf25b68c8f7acecb0" title="Tworzy wielomian tożsamościowo równy zeru." alt="" coords="139,80,219,107"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a18ae917306cbf348e563e1964f291835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ae917306cbf348e563e1964f291835">&#9670;&nbsp;</a></span>getAndPush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void getAndPush </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPoly.html">Poly</a>(*)()&#160;</td>
+          <td class="paramname"><em>fun</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wrzuca na stos wielomian stworzony przez funkcję. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: stos </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fun</td><td>: funkcja tworząca wielomian </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="CalcFunctions_8c_a18ae917306cbf348e563e1964f291835_cgraph.png" border="0" usemap="#CalcFunctions_8c_a18ae917306cbf348e563e1964f291835_cgraph" alt=""/></div>
+<map name="CalcFunctions_8c_a18ae917306cbf348e563e1964f291835_cgraph" id="CalcFunctions_8c_a18ae917306cbf348e563e1964f291835_cgraph">
+<area shape="rect" title="Wrzuca na stos wielomian stworzony przez funkcję." alt="" coords="5,5,104,32"/>
+<area shape="rect" href="Stack_8c.html#a0d8e471d67a42dafeb8347463d989237" title="Dodaje wielomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="152,5,205,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3cfacb6081af5787f4f2236559764f0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cfacb6081af5787f4f2236559764f0e">&#9670;&nbsp;</a></span>hasNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hasNull </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ind</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy w linii znajduje się \0 (w środku linii). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>: linia </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ind</td><td>: długość linii </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>linia_ma_\0 </dd></dl>
+
+</div>
+</div>
+<a id="acd6f5c21e24ac959fb123ec4df931e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6f5c21e24ac959fb123ec4df931e03">&#9670;&nbsp;</a></span>isComment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isComment </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy linia jest komentarzem (zaczyna się hashem). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>: linia </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>linia_jest_komentarzem </dd></dl>
+
+</div>
+</div>
+<a id="a6bb8fdb8a951b3849409dfecfa64a498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb8fdb8a951b3849409dfecfa64a498">&#9670;&nbsp;</a></span>is_digit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int is_digit </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy znak jest cyfrą. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>: znak </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>c jest cyfrą </dd></dl>
+
+</div>
+</div>
+<a id="a28fae96556eaf5444390af49ae3fd40a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28fae96556eaf5444390af49ae3fd40a">&#9670;&nbsp;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isEmpty </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy linia jest pusta. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>: linia </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>: rozmiar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>linia_jest_pusta </dd></dl>
+
+</div>
+</div>
+<a id="a83f17be10150bd0eb7e793df20c2f19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f17be10150bd0eb7e793df20c2f19b">&#9670;&nbsp;</a></span>isWhite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isWhite </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy znak jest biały. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>: sprawdzany znak </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>znak_jest_biały </dd></dl>
+
+</div>
+</div>
+<a id="ac6415441e61302f8a4ab1d61fc4c0e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6415441e61302f8a4ab1d61fc4c0e51">&#9670;&nbsp;</a></span>oneArg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void oneArg </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPoly.html">Poly</a>(*)(const <a class="el" href="structPoly.html">Poly</a> *)&#160;</td>
+          <td class="paramname"><em>fun</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shouldPop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wrzuca na stos wielomian stworzony przez funkcję jednoargumentową </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: stos </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fun</td><td>: funkcja tworząca wielomian </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>: wskaźnik na miejsce przechowujące kod błędu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shouldPop</td><td>: czy wielomian z góry powinien zostać usunięty </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="CalcFunctions_8c_ac6415441e61302f8a4ab1d61fc4c0e51_cgraph.png" border="0" usemap="#CalcFunctions_8c_ac6415441e61302f8a4ab1d61fc4c0e51_cgraph" alt=""/></div>
+<map name="CalcFunctions_8c_ac6415441e61302f8a4ab1d61fc4c0e51_cgraph" id="CalcFunctions_8c_ac6415441e61302f8a4ab1d61fc4c0e51_cgraph">
+<area shape="rect" title="Wrzuca na stos wielomian stworzony przez funkcję jednoargumentową" alt="" coords="5,105,73,132"/>
+<area shape="rect" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="121,29,223,56"/>
+<area shape="rect" href="Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308" title="Zwraca wielomian z góry stosu i go zrzuca." alt="" coords="149,80,195,107"/>
+<area shape="rect" href="Stack_8c.html#a0d8e471d67a42dafeb8347463d989237" title="Dodaje wielomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="145,131,199,157"/>
+<area shape="rect" href="Stack_8c.html#a234cb68c95eb0357289537c33788fd0d" title="Zwraca wielomian wrzucony jako ostatni." alt="" coords="151,181,193,208"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6eba404767b6677b37ef06843e39108f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eba404767b6677b37ef06843e39108f">&#9670;&nbsp;</a></span>printError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printError </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ind</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wypisuje błąd na podstawie informacji. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>: kod błędu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ind</td><td>: numer wiersza </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a735f24f4a922448d74c64a72edff618c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a735f24f4a922448d74c64a72edff618c">&#9670;&nbsp;</a></span>scanCoeff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structPoly.html">Poly</a> scanCoeff </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wczytuje wielomian z linii zakładając, że jest współczynnikiem. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>: linia </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>: wskaźnik na miejsce przechowujące kod błędu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wczytany wielomian </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="CalcFunctions_8c_a735f24f4a922448d74c64a72edff618c_cgraph.png" border="0" usemap="#CalcFunctions_8c_a735f24f4a922448d74c64a72edff618c_cgraph" alt=""/></div>
+<map name="CalcFunctions_8c_a735f24f4a922448d74c64a72edff618c_cgraph" id="CalcFunctions_8c_a735f24f4a922448d74c64a72edff618c_cgraph">
+<area shape="rect" title="Wczytuje wielomian z linii zakładając, że jest współczynnikiem." alt="" coords="5,56,92,83"/>
+<area shape="rect" href="CalcFunctions_8c.html#a63e6e01501817a283f88c47781f2a6e8" title="Zaznacza, że na wejściu został podany błędny wielomian i czyści pamięć poświęconą na tworzenie wielom..." alt="" coords="161,5,236,32"/>
+<area shape="rect" href="CalcFunctions_8c.html#a6bb8fdb8a951b3849409dfecfa64a498" title="Sprawdza, czy znak jest cyfrą." alt="" coords="164,56,233,83"/>
+<area shape="rect" href="poly_8h.html#aac5948dc82c3a64c55c60831991f7864" title="Tworzy wielomian, który jest współczynnikiem (wielomian stały)." alt="" coords="140,107,257,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a80026ac3b5f09ff9041c1f5d82780350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80026ac3b5f09ff9041c1f5d82780350">&#9670;&nbsp;</a></span>scanIrregularOperation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void scanIrregularOperation </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structStack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wykonuje operację na podstawie linii. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>: linia </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: Stos, na którym potencjalnie wykona się operacja </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>: wskaźnik na miejsce, w którym przechowywane są informacje o błędach </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="CalcFunctions_8c_a80026ac3b5f09ff9041c1f5d82780350_cgraph.png" border="0" usemap="#CalcFunctions_8c_a80026ac3b5f09ff9041c1f5d82780350_cgraph" alt=""/></div>
+<map name="CalcFunctions_8c_a80026ac3b5f09ff9041c1f5d82780350_cgraph" id="CalcFunctions_8c_a80026ac3b5f09ff9041c1f5d82780350_cgraph">
+<area shape="rect" title="Wykonuje operację na podstawie linii." alt="" coords="5,229,176,256"/>
+<area shape="rect" href="CalcFunctions_8c.html#a83f17be10150bd0eb7e793df20c2f19b" title="Sprawdza, czy znak jest biały." alt="" coords="237,5,313,32"/>
+<area shape="rect" href="poly_8c.html#a10020aea410f5a07374537dbb431d1fe" title="Zwraca stopień wielomianu (&#45;1 dla wielomianu tożsamościowo równego zeru)." alt="" coords="237,80,313,107"/>
+<area shape="rect" href="poly_8c.html#af1d3ea4ed1d054d9fbc4f715bbc64544" title="Zwraca stopień wielomianu ze względu na zadaną zmienną (&#45;1 dla wielomianu tożsamościowo równego zeru)..." alt="" coords="228,155,321,181"/>
+<area shape="rect" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="224,229,325,256"/>
+<area shape="rect" href="Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308" title="Zwraca wielomian z góry stosu i go zrzuca." alt="" coords="251,280,298,307"/>
+<area shape="rect" href="CalcFunctions_8c.html#ab664231a4945f671ff620063e7bf63ad" title="Sprawdza, czy prefiks linii jest taki sam jak druga linia." alt="" coords="230,331,319,357"/>
+<area shape="rect" href="Stack_8c.html#a234cb68c95eb0357289537c33788fd0d" title="Zwraca wielomian wrzucony jako ostatni." alt="" coords="253,381,296,408"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aecfc03b0ffd18b44d68ce746f7b8d0f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecfc03b0ffd18b44d68ce746f7b8d0f2">&#9670;&nbsp;</a></span>scanMonos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structPoly.html">Poly</a> scanMonos </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wczytuje wielomian z linii zakładając, że składa się z jednomianów. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>: linia </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>: wskaźnik na miejsce przechowujące kod błędu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wczytany wielomian </dd></dl>
+<p>ominiecie przecinka</p>
+<p>zakładam, że -0 nie jest dobrym wykładnikiem</p>
+<p>przejscie po zamykajacym nawiasie</p>
+<p>przejscie po plusie</p>
+<p>jak nie ma plusa to konczymy wielomian; jesli czegos nie przerobilismy to potem to zobaczymy</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="CalcFunctions_8c_aecfc03b0ffd18b44d68ce746f7b8d0f2_cgraph.png" border="0" usemap="#CalcFunctions_8c_aecfc03b0ffd18b44d68ce746f7b8d0f2_cgraph" alt=""/></div>
+<map name="CalcFunctions_8c_aecfc03b0ffd18b44d68ce746f7b8d0f2_cgraph" id="CalcFunctions_8c_aecfc03b0ffd18b44d68ce746f7b8d0f2_cgraph">
+<area shape="rect" title="Wczytuje wielomian z linii zakładając, że składa się z jednomianów." alt="" coords="5,232,100,259"/>
+<area shape="rect" href="Vector_8c.html#a20a707d0512c7f3cfde0f63639660615" title="Dodaje jednomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="323,156,425,183"/>
+<area shape="rect" href="CalcFunctions_8c.html#a63e6e01501817a283f88c47781f2a6e8" title="Zaznacza, że na wejściu został podany błędny wielomian i czyści pamięć poświęconą na tworzenie wielom..." alt="" coords="170,55,245,81"/>
+<area shape="rect" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="323,29,425,56"/>
+<area shape="rect" href="Vector_8c.html#a58825d30d6fd35de137a9d7d0c6b5814" title="Tworzy tablicę o pewnej stałej wielkości." alt="" coords="165,156,249,183"/>
+<area shape="rect" href="CalcFunctions_8c.html#a6bb8fdb8a951b3849409dfecfa64a498" title="Sprawdza, czy znak jest cyfrą." alt="" coords="173,207,242,233"/>
+<area shape="rect" href="poly_8h.html#ab3c9ee0f74dabe5ce9d64a6915566eeb" title="Tworzy jednomian ." alt="" coords="315,308,433,335"/>
+<area shape="rect" href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="481,308,572,335"/>
+<area shape="rect" href="poly_8c.html#aa9a13ecbdb28cf16c699c27290a7c56c" title="Sumuje listę jednomianów i tworzy z nich wielomian." alt="" coords="148,257,267,284"/>
+<area shape="rect" href="CalcFunctions_8c.html#a0663045e0abb84063f1ef3459ec0d4a0" title="Wczytuje wielomian z linii." alt="" coords="167,409,247,436"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9861f7779557c3faeca349af02025ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9861f7779557c3faeca349af02025ce1">&#9670;&nbsp;</a></span>scanOperation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scanOperation </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structStack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wykonuje operację na podstawie linii. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>: linia </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: Stos, na którym potencjalnie wykona się operacja </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>: wskaźnik na miejsce, w którym przechowywane są informacje o błędach </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="CalcFunctions_8c_a9861f7779557c3faeca349af02025ce1_cgraph.png" border="0" usemap="#CalcFunctions_8c_a9861f7779557c3faeca349af02025ce1_cgraph" alt=""/></div>
+<map name="CalcFunctions_8c_a9861f7779557c3faeca349af02025ce1_cgraph" id="CalcFunctions_8c_a9861f7779557c3faeca349af02025ce1_cgraph">
+<area shape="rect" title="Wykonuje operację na podstawie linii." alt="" coords="5,587,121,614"/>
+<area shape="rect" href="CalcFunctions_8c.html#a18ae917306cbf348e563e1964f291835" title="Wrzuca na stos wielomian stworzony przez funkcję." alt="" coords="205,258,304,285"/>
+<area shape="rect" href="Stack_8c.html#a0d8e471d67a42dafeb8347463d989237" title="Dodaje wielomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="412,309,465,335"/>
+<area shape="rect" href="CalcFunctions_8c.html#a83f17be10150bd0eb7e793df20c2f19b" title="Sprawdza, czy znak jest biały." alt="" coords="401,410,477,437"/>
+<area shape="rect" href="CalcFunctions_8c.html#ac6415441e61302f8a4ab1d61fc4c0e51" title="Wrzuca na stos wielomian stworzony przez funkcję jednoargumentową" alt="" coords="221,562,289,589"/>
+<area shape="rect" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="388,586,489,613"/>
+<area shape="rect" href="poly_8h.html#a98512498bdb4679278532e930b727755" title="Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały)." alt="" coords="676,317,771,343"/>
+<area shape="rect" href="Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308" title="Zwraca wielomian z góry stosu i go zrzuca." alt="" coords="415,511,462,538"/>
+<area shape="rect" href="Stack_8c.html#a234cb68c95eb0357289537c33788fd0d" title="Zwraca wielomian wrzucony jako ostatni." alt="" coords="417,675,460,702"/>
+<area shape="rect" href="poly_8c.html#afd55434759a46901958eb5ad79b78217" title="Dodaje dwa wielomiany." alt="" coords="217,461,292,487"/>
+<area shape="rect" href="poly_8c.html#a22d1e18efcb1373fe1f0fae77856f488" title="Wylicza wartość wielomianu w punkcie x." alt="" coords="223,106,287,133"/>
+<area shape="rect" href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d" title="Sprawdza, czy wielomian jest tożsamościowo równy zeru." alt="" coords="537,169,628,195"/>
+<area shape="rect" href="poly_8c.html#a6e066ef82f4d7611d7276a6adc8e47ac" title="Mnoży dwa wielomiany." alt="" coords="401,231,476,258"/>
+<area shape="rect" href="poly_8c.html#a295cdeb61c077ea6f408208d331271cd" title="Robi pełną, głęboką kopię wielomianu." alt="" coords="539,473,626,499"/>
+<area shape="rect" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c" title="Sprawdza równość dwóch wielomianów." alt="" coords="544,706,621,733"/>
+<area shape="rect" href="poly_8c.html#a79194d594bd19fae18c7d72a30364b18" title="Zwraca przeciwny wielomian." alt="" coords="217,765,293,791"/>
+<area shape="rect" href="poly_8c.html#abd180157f87e1da3669356026bbddc5e" title="Odejmuje wielomian od wielomianu." alt="" coords="217,815,292,842"/>
+<area shape="rect" href="poly_8h.html#af3229f3aa1f6bffaf25b68c8f7acecb0" title="Tworzy wielomian tożsamościowo równy zeru." alt="" coords="215,866,295,893"/>
+<area shape="rect" href="poly_8c.html#a205cfc78ca06c3c2d51df8eb4ff2f96f" title="Wypisuje wielomian na standardowe wyjście." alt="" coords="543,1099,623,1126"/>
+<area shape="rect" href="CalcFunctions_8c.html#a80026ac3b5f09ff9041c1f5d82780350" title="Wykonuje operację na podstawie linii." alt="" coords="169,613,340,639"/>
+<area shape="rect" href="CalcFunctions_8c.html#ab664231a4945f671ff620063e7bf63ad" title="Sprawdza, czy prefiks linii jest taki sam jak druga linia." alt="" coords="394,827,483,854"/>
+<area shape="rect" href="CalcFunctions_8c.html#accb46f7ff04df326d492272e7b5258d0" title="Wypisuje pewną własność wielomianu z góry stosu." alt="" coords="205,714,304,741"/>
+<area shape="rect" href="CalcFunctions_8c.html#a57edcb0ff953cab100901afa7f98bd51" title="Wrzuca na stos wielomian stworzony przez funkcję dwuargumentową" alt="" coords="217,410,292,437"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0663045e0abb84063f1ef3459ec0d4a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0663045e0abb84063f1ef3459ec0d4a0">&#9670;&nbsp;</a></span>scanPoly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPoly.html">Poly</a> scanPoly </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wczytuje wielomian z linii. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>: wskaźnik na linię </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>: wskaźnik na miejsce przechowujące kod błędu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wczytany wielomian (lub wielomian-atrapa w przypadku błędu) </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="CalcFunctions_8c_a0663045e0abb84063f1ef3459ec0d4a0_cgraph.png" border="0" usemap="#CalcFunctions_8c_a0663045e0abb84063f1ef3459ec0d4a0_cgraph" alt=""/></div>
+<map name="CalcFunctions_8c_a0663045e0abb84063f1ef3459ec0d4a0_cgraph" id="CalcFunctions_8c_a0663045e0abb84063f1ef3459ec0d4a0_cgraph">
+<area shape="rect" title="Wczytuje wielomian z linii." alt="" coords="5,56,85,83"/>
+<area shape="rect" href="CalcFunctions_8c.html#a735f24f4a922448d74c64a72edff618c" title="Wczytuje wielomian z linii zakładając, że jest współczynnikiem." alt="" coords="137,5,224,32"/>
+<area shape="rect" href="CalcFunctions_8c.html#aecfc03b0ffd18b44d68ce746f7b8d0f2" title="Wczytuje wielomian z linii zakładając, że składa się z jednomianów." alt="" coords="133,56,228,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab664231a4945f671ff620063e7bf63ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab664231a4945f671ff620063e7bf63ad">&#9670;&nbsp;</a></span>startsWith()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int startsWith </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy prefiks linii jest taki sam jak druga linia. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s1</td><td>: linia </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">s2</td><td>: wzorzec </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>s1==s2+x </dd></dl>
+<p>istnieje cos niechcianego po komendzie</p>
+
+</div>
+</div>
+<a id="ab0cad87e5fbd691bbe450622509ff592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0cad87e5fbd691bbe450622509ff592">&#9670;&nbsp;</a></span>startsWithLetter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int startsWithLetter </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy linia zaczyna się od litery. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>: linia </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>linia_zaczyna_się_literą </dd></dl>
+
+</div>
+</div>
+<a id="accb46f7ff04df326d492272e7b5258d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb46f7ff04df326d492272e7b5258d0">&#9670;&nbsp;</a></span>topAndPrint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void topAndPrint </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool(*)(const <a class="el" href="structPoly.html">Poly</a> *)&#160;</td>
+          <td class="paramname"><em>fun</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wypisuje pewną własność wielomianu z góry stosu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: stos </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fun</td><td>: funkcja mówiąca, czy dana własność jest prawdziwa </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>: wskaźnik na miejsce przechowujące kod błędu </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="CalcFunctions_8c_accb46f7ff04df326d492272e7b5258d0_cgraph.png" border="0" usemap="#CalcFunctions_8c_accb46f7ff04df326d492272e7b5258d0_cgraph" alt=""/></div>
+<map name="CalcFunctions_8c_accb46f7ff04df326d492272e7b5258d0_cgraph" id="CalcFunctions_8c_accb46f7ff04df326d492272e7b5258d0_cgraph">
+<area shape="rect" title="Wypisuje pewną własność wielomianu z góry stosu." alt="" coords="5,5,104,32"/>
+<area shape="rect" href="Stack_8c.html#a234cb68c95eb0357289537c33788fd0d" title="Zwraca wielomian wrzucony jako ostatni." alt="" coords="152,5,195,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a57edcb0ff953cab100901afa7f98bd51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57edcb0ff953cab100901afa7f98bd51">&#9670;&nbsp;</a></span>twoArgs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void twoArgs </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structStack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPoly.html">Poly</a>(*)(const <a class="el" href="structPoly.html">Poly</a> *, const <a class="el" href="structPoly.html">Poly</a> *)&#160;</td>
+          <td class="paramname"><em>fun</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wrzuca na stos wielomian stworzony przez funkcję dwuargumentową </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>: stos </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fun</td><td>: funkcja tworząca wielomian </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">error</td><td>: wskaźnik na miejsce przechowujące kod błędu </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="CalcFunctions_8c_a57edcb0ff953cab100901afa7f98bd51_cgraph.png" border="0" usemap="#CalcFunctions_8c_a57edcb0ff953cab100901afa7f98bd51_cgraph" alt=""/></div>
+<map name="CalcFunctions_8c_a57edcb0ff953cab100901afa7f98bd51_cgraph" id="CalcFunctions_8c_a57edcb0ff953cab100901afa7f98bd51_cgraph">
+<area shape="rect" title="Wrzuca na stos wielomian stworzony przez funkcję dwuargumentową" alt="" coords="5,80,80,107"/>
+<area shape="rect" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="128,29,229,56"/>
+<area shape="rect" href="Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308" title="Zwraca wielomian z góry stosu i go zrzuca." alt="" coords="155,80,202,107"/>
+<area shape="rect" href="Stack_8c.html#a0d8e471d67a42dafeb8347463d989237" title="Dodaje wielomian na koniec tablicy (i w razie konieczności rozszerza tablicę)." alt="" coords="152,131,205,157"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pt, 21 maj 2021 23:01:16 dla Polynomials programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

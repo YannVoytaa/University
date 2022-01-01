@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Polynomials: Plik źródłowy cannot_change_arguments.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Polynomials
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c6fe1d3fbb7aaa54faf42e7f9c1260d3.html">testy-duze-zadanie-1</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cannot_change_arguments.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;helper_functions_from_example.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keywordtype">void</span> CannotChangeArguments() {</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <a class="code" href="structPoly.html">Poly</a> a = P(C(1), 0, C(-1), 1,           C(2), 3);</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="structPoly.html">Poly</a> b = P(C(1), 0, C(1),  1, C(-1), 2, C(4), 3);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="structPoly.html">Poly</a> copy_a = <a class="code" href="poly_8c.html#a295cdeb61c077ea6f408208d331271cd">PolyClone</a>(&amp;a);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="structPoly.html">Poly</a> copy_b = <a class="code" href="poly_8c.html#a295cdeb61c077ea6f408208d331271cd">PolyClone</a>(&amp;b);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    (void) <a class="code" href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d">PolyIsZero</a>(&amp;a);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    assert(<a class="code" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a>(&amp;a, &amp;copy_a));</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    (void) <a class="code" href="poly_8h.html#a98512498bdb4679278532e930b727755">PolyIsCoeff</a>(&amp;a);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    assert(<a class="code" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a>(&amp;a, &amp;copy_a));</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="structPoly.html">Poly</a> c = <a class="code" href="poly_8c.html#afd55434759a46901958eb5ad79b78217">PolyAdd</a>(&amp;a, &amp;b);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a>(&amp;c);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    assert(<a class="code" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a>(&amp;a, &amp;copy_a) &amp;&amp; <a class="code" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a>(&amp;b, &amp;copy_b));</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    c = <a class="code" href="poly_8c.html#a6e066ef82f4d7611d7276a6adc8e47ac">PolyMul</a>(&amp;a, &amp;b);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a>(&amp;c);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    assert(<a class="code" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a>(&amp;a, &amp;copy_a) &amp;&amp; <a class="code" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a>(&amp;b, &amp;copy_b));</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    c = <a class="code" href="poly_8c.html#a79194d594bd19fae18c7d72a30364b18">PolyNeg</a>(&amp;a);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a>(&amp;c);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    assert(<a class="code" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a>(&amp;a, &amp;copy_a));</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    c = <a class="code" href="poly_8c.html#abd180157f87e1da3669356026bbddc5e">PolySub</a>(&amp;a, &amp;b);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a>(&amp;c);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    assert(<a class="code" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a>(&amp;a, &amp;copy_a) &amp;&amp; <a class="code" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a>(&amp;b, &amp;copy_b));</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    (void) <a class="code" href="poly_8c.html#af1d3ea4ed1d054d9fbc4f715bbc64544">PolyDegBy</a>(&amp;a, 1);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    assert(<a class="code" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a>(&amp;a, &amp;copy_a));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    (void) <a class="code" href="poly_8c.html#a10020aea410f5a07374537dbb431d1fe">PolyDeg</a>(&amp;a);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    assert(<a class="code" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a>(&amp;a, &amp;copy_a));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    c = <a class="code" href="poly_8c.html#a22d1e18efcb1373fe1f0fae77856f488">PolyAt</a>(&amp;a, 1);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a>(&amp;c);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    assert(<a class="code" href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a>(&amp;a, &amp;copy_a));</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a>(&amp;a);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a>(&amp;b);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a>(&amp;copy_a);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a>(&amp;copy_b);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="apoly_8c_html_a54faf738d9aa518d1e1d6db6c3142e3f"><div class="ttname"><a href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a></div><div class="ttdeci">void PolyDestroy(Poly *p)</div><div class="ttdoc">Usuwa wielomian z pamięci.</div><div class="ttdef"><b>Definition:</b> poly.c:11</div></div>
+<div class="ttc" id="apoly_8c_html_a295cdeb61c077ea6f408208d331271cd"><div class="ttname"><a href="poly_8c.html#a295cdeb61c077ea6f408208d331271cd">PolyClone</a></div><div class="ttdeci">Poly PolyClone(const Poly *p)</div><div class="ttdoc">Robi pełną, głęboką kopię wielomianu.</div><div class="ttdef"><b>Definition:</b> poly.c:39</div></div>
+<div class="ttc" id="astructPoly_html"><div class="ttname"><a href="structPoly.html">Poly</a></div><div class="ttdoc">To jest struktura przechowująca wielomian.</div><div class="ttdef"><b>Definition:</b> poly.h:29</div></div>
+<div class="ttc" id="apoly_8h_html_aaaf60733ab55efe5130da77928fe941d"><div class="ttname"><a href="poly_8h.html#aaaf60733ab55efe5130da77928fe941d">PolyIsZero</a></div><div class="ttdeci">static bool PolyIsZero(const Poly *p)</div><div class="ttdoc">Sprawdza, czy wielomian jest tożsamościowo równy zeru.</div><div class="ttdef"><b>Definition:</b> poly.h:109</div></div>
+<div class="ttc" id="apoly_8c_html_a22d1e18efcb1373fe1f0fae77856f488"><div class="ttname"><a href="poly_8c.html#a22d1e18efcb1373fe1f0fae77856f488">PolyAt</a></div><div class="ttdeci">Poly PolyAt(const Poly *p, poly_coeff_t x)</div><div class="ttdoc">Wylicza wartość wielomianu w punkcie x.</div><div class="ttdef"><b>Definition:</b> poly.c:333</div></div>
+<div class="ttc" id="apoly_8c_html_af1d3ea4ed1d054d9fbc4f715bbc64544"><div class="ttname"><a href="poly_8c.html#af1d3ea4ed1d054d9fbc4f715bbc64544">PolyDegBy</a></div><div class="ttdeci">poly_exp_t PolyDegBy(const Poly *p, size_t var_idx)</div><div class="ttdoc">Zwraca stopień wielomianu ze względu na zadaną zmienną (-1 dla wielomianu tożsamościowo równego zeru)...</div><div class="ttdef"><b>Definition:</b> poly.c:266</div></div>
+<div class="ttc" id="apoly_8c_html_a10020aea410f5a07374537dbb431d1fe"><div class="ttname"><a href="poly_8c.html#a10020aea410f5a07374537dbb431d1fe">PolyDeg</a></div><div class="ttdeci">poly_exp_t PolyDeg(const Poly *p)</div><div class="ttdoc">Zwraca stopień wielomianu (-1 dla wielomianu tożsamościowo równego zeru).</div><div class="ttdef"><b>Definition:</b> poly.c:289</div></div>
+<div class="ttc" id="apoly_8c_html_a79194d594bd19fae18c7d72a30364b18"><div class="ttname"><a href="poly_8c.html#a79194d594bd19fae18c7d72a30364b18">PolyNeg</a></div><div class="ttdeci">Poly PolyNeg(const Poly *p)</div><div class="ttdoc">Zwraca przeciwny wielomian.</div><div class="ttdef"><b>Definition:</b> poly.c:247</div></div>
+<div class="ttc" id="apoly_8h_html_a98512498bdb4679278532e930b727755"><div class="ttname"><a href="poly_8h.html#a98512498bdb4679278532e930b727755">PolyIsCoeff</a></div><div class="ttdeci">static bool PolyIsCoeff(const Poly *p)</div><div class="ttdoc">Sprawdza, czy wielomian jest współczynnikiem (czy jest to wielomian stały).</div><div class="ttdef"><b>Definition:</b> poly.h:100</div></div>
+<div class="ttc" id="apoly_8c_html_abd180157f87e1da3669356026bbddc5e"><div class="ttname"><a href="poly_8c.html#abd180157f87e1da3669356026bbddc5e">PolySub</a></div><div class="ttdeci">Poly PolySub(const Poly *p, const Poly *q)</div><div class="ttdoc">Odejmuje wielomian od wielomianu.</div><div class="ttdef"><b>Definition:</b> poly.c:251</div></div>
+<div class="ttc" id="apoly_8c_html_afd55434759a46901958eb5ad79b78217"><div class="ttname"><a href="poly_8c.html#afd55434759a46901958eb5ad79b78217">PolyAdd</a></div><div class="ttdeci">Poly PolyAdd(const Poly *p, const Poly *q)</div><div class="ttdoc">Dodaje dwa wielomiany.</div><div class="ttdef"><b>Definition:</b> poly.c:170</div></div>
+<div class="ttc" id="apoly_8c_html_a1183de0891f01c491dca485e284a1e6c"><div class="ttname"><a href="poly_8c.html#a1183de0891f01c491dca485e284a1e6c">PolyIsEq</a></div><div class="ttdeci">bool PolyIsEq(const Poly *p, const Poly *q)</div><div class="ttdoc">Sprawdza równość dwóch wielomianów.</div><div class="ttdef"><b>Definition:</b> poly.c:302</div></div>
+<div class="ttc" id="apoly_8c_html_a6e066ef82f4d7611d7276a6adc8e47ac"><div class="ttname"><a href="poly_8c.html#a6e066ef82f4d7611d7276a6adc8e47ac">PolyMul</a></div><div class="ttdeci">Poly PolyMul(const Poly *p, const Poly *q)</div><div class="ttdoc">Mnoży dwa wielomiany.</div><div class="ttdef"><b>Definition:</b> poly.c:221</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pt, 21 maj 2021 23:01:16 dla Polynomials programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="destroyStack" name="destroyStack">
+<area shape="rect" id="node1" title="Usuwa stos z pamięci." alt="" coords="5,55,112,81"/>
+<area shape="rect" id="node2" href="$poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f" title="Usuwa wielomian z pamięci." alt="" coords="160,29,261,56"/>
+<area shape="rect" id="node3" href="$Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308" title="Zwraca wielomian z góry stosu i go zrzuca." alt="" coords="187,80,234,107"/>
+</map>

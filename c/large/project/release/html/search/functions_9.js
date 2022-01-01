@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['polyadd_128',['PolyAdd',['../poly_8c.html#afd55434759a46901958eb5ad79b78217',1,'PolyAdd(const Poly *p, const Poly *q):&#160;poly.c'],['../poly_8h.html#afd55434759a46901958eb5ad79b78217',1,'PolyAdd(const Poly *p, const Poly *q):&#160;poly.c']]],
+  ['polyaddmonos_129',['PolyAddMonos',['../poly_8c.html#aa9a13ecbdb28cf16c699c27290a7c56c',1,'PolyAddMonos(size_t count, const Mono monos[]):&#160;poly.c'],['../poly_8h.html#aa9a13ecbdb28cf16c699c27290a7c56c',1,'PolyAddMonos(size_t count, const Mono monos[]):&#160;poly.c']]],
+  ['polyaddwithcoeff_130',['PolyAddWithCoeff',['../poly_8c.html#af659cef51d42c197388e75cd53b57fe5',1,'PolyAddWithCoeff(const Poly *p, const Poly *q, poly_coeff_t c):&#160;poly.c'],['../poly_8h.html#af659cef51d42c197388e75cd53b57fe5',1,'PolyAddWithCoeff(const Poly *p, const Poly *q, poly_coeff_t c):&#160;poly.c']]],
+  ['polyat_131',['PolyAt',['../poly_8c.html#a22d1e18efcb1373fe1f0fae77856f488',1,'PolyAt(const Poly *p, poly_coeff_t x):&#160;poly.c'],['../poly_8h.html#a22d1e18efcb1373fe1f0fae77856f488',1,'PolyAt(const Poly *p, poly_coeff_t x):&#160;poly.c']]],
+  ['polyclone_132',['PolyClone',['../poly_8c.html#a295cdeb61c077ea6f408208d331271cd',1,'PolyClone(const Poly *p):&#160;poly.c'],['../poly_8h.html#a295cdeb61c077ea6f408208d331271cd',1,'PolyClone(const Poly *p):&#160;poly.c']]],
+  ['polydeg_133',['PolyDeg',['../poly_8c.html#a10020aea410f5a07374537dbb431d1fe',1,'PolyDeg(const Poly *p):&#160;poly.c'],['../poly_8h.html#a10020aea410f5a07374537dbb431d1fe',1,'PolyDeg(const Poly *p):&#160;poly.c']]],
+  ['polydegby_134',['PolyDegBy',['../poly_8c.html#af1d3ea4ed1d054d9fbc4f715bbc64544',1,'PolyDegBy(const Poly *p, size_t var_idx):&#160;poly.c'],['../poly_8h.html#af1d3ea4ed1d054d9fbc4f715bbc64544',1,'PolyDegBy(const Poly *p, size_t var_idx):&#160;poly.c']]],
+  ['polydestroy_135',['PolyDestroy',['../poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f',1,'PolyDestroy(Poly *p):&#160;poly.c'],['../poly_8h.html#a54faf738d9aa518d1e1d6db6c3142e3f',1,'PolyDestroy(Poly *p):&#160;poly.c']]],
+  ['polyfromcoeff_136',['PolyFromCoeff',['../poly_8h.html#aac5948dc82c3a64c55c60831991f7864',1,'poly.h']]],
+  ['polyfromvector_137',['PolyFromVector',['../poly_8c.html#a731d4c58953e6021b072235a8b2362cc',1,'poly.c']]],
+  ['polyiscoeff_138',['PolyIsCoeff',['../poly_8h.html#a98512498bdb4679278532e930b727755',1,'poly.h']]],
+  ['polyiseq_139',['PolyIsEq',['../poly_8c.html#a1183de0891f01c491dca485e284a1e6c',1,'PolyIsEq(const Poly *p, const Poly *q):&#160;poly.c'],['../poly_8h.html#a1183de0891f01c491dca485e284a1e6c',1,'PolyIsEq(const Poly *p, const Poly *q):&#160;poly.c']]],
+  ['polyiszero_140',['PolyIsZero',['../poly_8h.html#aaaf60733ab55efe5130da77928fe941d',1,'poly.h']]],
+  ['polymul_141',['PolyMul',['../poly_8c.html#a6e066ef82f4d7611d7276a6adc8e47ac',1,'PolyMul(const Poly *p, const Poly *q):&#160;poly.c'],['../poly_8h.html#a6e066ef82f4d7611d7276a6adc8e47ac',1,'PolyMul(const Poly *p, const Poly *q):&#160;poly.c']]],
+  ['polymulbycoeff_142',['PolyMulByCoeff',['../poly_8c.html#a720365f2069ca32ea4234014c98d6863',1,'poly.c']]],
+  ['polyneg_143',['PolyNeg',['../poly_8c.html#a79194d594bd19fae18c7d72a30364b18',1,'PolyNeg(const Poly *p):&#160;poly.c'],['../poly_8h.html#a79194d594bd19fae18c7d72a30364b18',1,'PolyNeg(const Poly *p):&#160;poly.c']]],
+  ['polypluscoeff_144',['PolyPlusCoeff',['../poly_8c.html#a666858ae7598e811e8d5fe9dac9ff954',1,'poly.c']]],
+  ['polysub_145',['PolySub',['../poly_8c.html#abd180157f87e1da3669356026bbddc5e',1,'PolySub(const Poly *p, const Poly *q):&#160;poly.c'],['../poly_8h.html#abd180157f87e1da3669356026bbddc5e',1,'PolySub(const Poly *p, const Poly *q):&#160;poly.c']]],
+  ['polyzero_146',['PolyZero',['../poly_8h.html#af3229f3aa1f6bffaf25b68c8f7acecb0',1,'poly.h']]],
+  ['pop_147',['pop',['../Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308',1,'pop(struct Stack *v):&#160;Stack.c'],['../Stack_8h.html#a3b753fbbdf04f89e0006b04427e1b308',1,'pop(struct Stack *v):&#160;Stack.c']]],
+  ['printerror_148',['printError',['../CalcFunctions_8c.html#a6eba404767b6677b37ef06843e39108f',1,'printError(int error, int ind):&#160;CalcFunctions.c'],['../CalcFunctions_8h.html#a6eba404767b6677b37ef06843e39108f',1,'printError(int error, int ind):&#160;CalcFunctions.c']]],
+  ['printpoly_149',['printPoly',['../poly_8c.html#a205cfc78ca06c3c2d51df8eb4ff2f96f',1,'printPoly(Poly *p):&#160;poly.c'],['../poly_8h.html#a205cfc78ca06c3c2d51df8eb4ff2f96f',1,'printPoly(Poly *p):&#160;poly.c']]],
+  ['push_150',['push',['../Stack_8c.html#a0d8e471d67a42dafeb8347463d989237',1,'push(struct Stack *v, Poly *m):&#160;Stack.c'],['../Stack_8h.html#a0d8e471d67a42dafeb8347463d989237',1,'push(struct Stack *v, Poly *m):&#160;Stack.c']]]
+];

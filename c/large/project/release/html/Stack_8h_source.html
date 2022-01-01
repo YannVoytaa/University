@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Polynomials: Plik źródłowy Stack.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Polynomials
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Stack.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Stack_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef STACK_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define STACK_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Stack_8h.html">Stack.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="poly_8h.html">poly.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structStack.html">   16</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structStack.html">Stack</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structStack.html#a3dd1a4fa1c124633a43b1b8063c9a4f2">   20</a></span>&#160;    <a class="code" href="structPoly.html">Poly</a> *<a class="code" href="structStack.html#a3dd1a4fa1c124633a43b1b8063c9a4f2">arr</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structStack.html#afb6d4ad9d2904c20d50102d310c963e0">   24</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="structStack.html#afb6d4ad9d2904c20d50102d310c963e0">capacity</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structStack.html#a3a469595caaaf49bbce059efabbe07b5">   28</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="structStack.html#a3a469595caaaf49bbce059efabbe07b5">size</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Stack_8h.html#a0d8e471d67a42dafeb8347463d989237">push</a>(<span class="keyword">struct</span> <a class="code" href="structStack.html">Stack</a> *v, <a class="code" href="structPoly.html">Poly</a> *m);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Stack_8h.html#a89de2ef2dbe596d9649f72f219f47e1c">initStack</a>(<span class="keyword">struct</span> <a class="code" href="structStack.html">Stack</a> *v);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Stack_8h.html#ae8d4718b4139b8433c81fa5630c91de7">initStackWithCount</a>(<span class="keyword">struct</span> <a class="code" href="structStack.html">Stack</a> *v, <span class="keywordtype">size_t</span> count);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="structPoly.html">Poly</a> <a class="code" href="Stack_8h.html#a234cb68c95eb0357289537c33788fd0d">top</a>(<span class="keyword">struct</span> <a class="code" href="structStack.html">Stack</a> *v);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="structPoly.html">Poly</a> <a class="code" href="Stack_8h.html#a3b753fbbdf04f89e0006b04427e1b308">pop</a>(<span class="keyword">struct</span> <a class="code" href="structStack.html">Stack</a> *v);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> <a class="code" href="Stack_8h.html#a26fbf51db1dc3c9b92db1b2a6274d631">destroyStack</a>(<span class="keyword">struct</span> <a class="code" href="structStack.html">Stack</a> *v);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif //STACK_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="apoly_8c_html_a54faf738d9aa518d1e1d6db6c3142e3f"><div class="ttname"><a href="poly_8c.html#a54faf738d9aa518d1e1d6db6c3142e3f">PolyDestroy</a></div><div class="ttdeci">void PolyDestroy(Poly *p)</div><div class="ttdoc">Usuwa wielomian z pamięci.</div><div class="ttdef"><b>Definition:</b> poly.c:11</div></div>
+<div class="ttc" id="astructPoly_html"><div class="ttname"><a href="structPoly.html">Poly</a></div><div class="ttdoc">To jest struktura przechowująca wielomian.</div><div class="ttdef"><b>Definition:</b> poly.h:29</div></div>
+<div class="ttc" id="aStack_8c_html_a234cb68c95eb0357289537c33788fd0d"><div class="ttname"><a href="Stack_8c.html#a234cb68c95eb0357289537c33788fd0d">top</a></div><div class="ttdeci">Poly top(struct Stack *v)</div><div class="ttdoc">Zwraca wielomian wrzucony jako ostatni.</div><div class="ttdef"><b>Definition:</b> Stack.c:45</div></div>
+<div class="ttc" id="aStack_8h_html_a234cb68c95eb0357289537c33788fd0d"><div class="ttname"><a href="Stack_8h.html#a234cb68c95eb0357289537c33788fd0d">top</a></div><div class="ttdeci">Poly top(struct Stack *v)</div><div class="ttdoc">Zwraca wielomian wrzucony jako ostatni.</div><div class="ttdef"><b>Definition:</b> Stack.c:45</div></div>
+<div class="ttc" id="aStack_8h_html_a89de2ef2dbe596d9649f72f219f47e1c"><div class="ttname"><a href="Stack_8h.html#a89de2ef2dbe596d9649f72f219f47e1c">initStack</a></div><div class="ttdeci">void initStack(struct Stack *v)</div><div class="ttdoc">Tworzy tablicę o pewnej stałej wielkości.</div><div class="ttdef"><b>Definition:</b> Stack.c:25</div></div>
+<div class="ttc" id="aStack_8c_html_a3b753fbbdf04f89e0006b04427e1b308"><div class="ttname"><a href="Stack_8c.html#a3b753fbbdf04f89e0006b04427e1b308">pop</a></div><div class="ttdeci">Poly pop(struct Stack *v)</div><div class="ttdoc">Zwraca wielomian z góry stosu i go zrzuca.</div><div class="ttdef"><b>Definition:</b> Stack.c:49</div></div>
+<div class="ttc" id="acalc_8c_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="calc_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> calc.c:21</div></div>
+<div class="ttc" id="aStack_8h_html_ae8d4718b4139b8433c81fa5630c91de7"><div class="ttname"><a href="Stack_8h.html#ae8d4718b4139b8433c81fa5630c91de7">initStackWithCount</a></div><div class="ttdeci">void initStackWithCount(struct Stack *v, size_t count)</div><div class="ttdoc">Tworzy tablicę wielkości count.</div><div class="ttdef"><b>Definition:</b> Stack.c:38</div></div>
+<div class="ttc" id="aStack_8h_html_a3b753fbbdf04f89e0006b04427e1b308"><div class="ttname"><a href="Stack_8h.html#a3b753fbbdf04f89e0006b04427e1b308">pop</a></div><div class="ttdeci">Poly pop(struct Stack *v)</div><div class="ttdoc">Zwraca wielomian z góry stosu i go zrzuca.</div><div class="ttdef"><b>Definition:</b> Stack.c:49</div></div>
+<div class="ttc" id="aStack_8h_html_a26fbf51db1dc3c9b92db1b2a6274d631"><div class="ttname"><a href="Stack_8h.html#a26fbf51db1dc3c9b92db1b2a6274d631">destroyStack</a></div><div class="ttdeci">void destroyStack(struct Stack *v)</div><div class="ttdoc">Usuwa stos z pamięci.</div><div class="ttdef"><b>Definition:</b> Stack.c:29</div></div>
+<div class="ttc" id="aStack_8c_html_ae8d4718b4139b8433c81fa5630c91de7"><div class="ttname"><a href="Stack_8c.html#ae8d4718b4139b8433c81fa5630c91de7">initStackWithCount</a></div><div class="ttdeci">void initStackWithCount(struct Stack *v, size_t count)</div><div class="ttdoc">Tworzy tablicę wielkości count.</div><div class="ttdef"><b>Definition:</b> Stack.c:38</div></div>
+<div class="ttc" id="aStack_8c_html_a26fbf51db1dc3c9b92db1b2a6274d631"><div class="ttname"><a href="Stack_8c.html#a26fbf51db1dc3c9b92db1b2a6274d631">destroyStack</a></div><div class="ttdeci">void destroyStack(struct Stack *v)</div><div class="ttdoc">Usuwa stos z pamięci.</div><div class="ttdef"><b>Definition:</b> Stack.c:29</div></div>
+<div class="ttc" id="astructStack_html_a3a469595caaaf49bbce059efabbe07b5"><div class="ttname"><a href="structStack.html#a3a469595caaaf49bbce059efabbe07b5">Stack::size</a></div><div class="ttdeci">size_t size</div><div class="ttdoc">Ilość elementów w tablicy.</div><div class="ttdef"><b>Definition:</b> Stack.h:28</div></div>
+<div class="ttc" id="astructStack_html"><div class="ttname"><a href="structStack.html">Stack</a></div><div class="ttdoc">To jest struktura przechowująca dynamiczną tablicę wielomianów.</div><div class="ttdef"><b>Definition:</b> Stack.h:16</div></div>
+<div class="ttc" id="astructStack_html_afb6d4ad9d2904c20d50102d310c963e0"><div class="ttname"><a href="structStack.html#afb6d4ad9d2904c20d50102d310c963e0">Stack::capacity</a></div><div class="ttdeci">size_t capacity</div><div class="ttdoc">Pojemność tablicy.</div><div class="ttdef"><b>Definition:</b> Stack.h:24</div></div>
+<div class="ttc" id="aStack_8h_html_a0d8e471d67a42dafeb8347463d989237"><div class="ttname"><a href="Stack_8h.html#a0d8e471d67a42dafeb8347463d989237">push</a></div><div class="ttdeci">void push(struct Stack *v, Poly *m)</div><div class="ttdoc">Dodaje wielomian na koniec tablicy (i w razie konieczności rozszerza tablicę).</div><div class="ttdef"><b>Definition:</b> Stack.c:15</div></div>
+<div class="ttc" id="apoly_8h_html"><div class="ttname"><a href="poly_8h.html">poly.h</a></div></div>
+<div class="ttc" id="aStack_8c_html_a89de2ef2dbe596d9649f72f219f47e1c"><div class="ttname"><a href="Stack_8c.html#a89de2ef2dbe596d9649f72f219f47e1c">initStack</a></div><div class="ttdeci">void initStack(struct Stack *v)</div><div class="ttdoc">Tworzy tablicę o pewnej stałej wielkości.</div><div class="ttdef"><b>Definition:</b> Stack.c:25</div></div>
+<div class="ttc" id="astructStack_html_a3dd1a4fa1c124633a43b1b8063c9a4f2"><div class="ttname"><a href="structStack.html#a3dd1a4fa1c124633a43b1b8063c9a4f2">Stack::arr</a></div><div class="ttdeci">Poly * arr</div><div class="ttdoc">Tablica wielomianów.</div><div class="ttdef"><b>Definition:</b> Stack.h:20</div></div>
+<div class="ttc" id="aStack_8c_html_a7ab9c9406d6e8432e3786bd89ec79695"><div class="ttname"><a href="Stack_8c.html#a7ab9c9406d6e8432e3786bd89ec79695">INIT_SIZE</a></div><div class="ttdeci">#define INIT_SIZE</div><div class="ttdoc">Domyslny rozmiar dynamicznej tablicy.</div><div class="ttdef"><b>Definition:</b> Stack.c:13</div></div>
+<div class="ttc" id="aStack_8c_html_a0d8e471d67a42dafeb8347463d989237"><div class="ttname"><a href="Stack_8c.html#a0d8e471d67a42dafeb8347463d989237">push</a></div><div class="ttdeci">void push(struct Stack *v, Poly *m)</div><div class="ttdoc">Dodaje wielomian na koniec tablicy (i w razie konieczności rozszerza tablicę).</div><div class="ttdef"><b>Definition:</b> Stack.c:15</div></div>
+<div class="ttc" id="aStack_8h_html"><div class="ttname"><a href="Stack_8h.html">Stack.h</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Pt, 21 maj 2021 23:01:16 dla Polynomials programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

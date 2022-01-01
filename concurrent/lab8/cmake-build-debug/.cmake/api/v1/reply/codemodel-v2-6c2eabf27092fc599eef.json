@@ -1,0 +1,113 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MIMUW-FORK",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "child-fifo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-child-fifo-Debug-8e3c8965fe585f4141ab.json",
+					"name" : "child-fifo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "child-pipe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-child-pipe-Debug-82d58415f245f82a34a1.json",
+					"name" : "child-pipe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "err::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-err-Debug-f0aa7b5f534d6b63f805.json",
+					"name" : "err",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "myPipe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-myPipe-Debug-750c53fb3bd5ac526917.json",
+					"name" : "myPipe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "parent-dup::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-parent-dup-Debug-9187e99e48617f42b288.json",
+					"name" : "parent-dup",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "parent-fifo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-parent-fifo-Debug-092c480c0b389f78019d.json",
+					"name" : "parent-fifo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "parent-pipe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-parent-pipe-Debug-f067cac9456f15588eda.json",
+					"name" : "parent-pipe",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yannvoytaa/CLionProjects/lab8/cmake-build-debug",
+		"source" : "/home/yannvoytaa/CLionProjects/lab8"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

@@ -1,0 +1,6 @@
+<map id="scanCoeff" name="scanCoeff">
+<area shape="rect" id="node1" title="Wczytuje wielomian z linii zakładając, że jest współczynnikiem." alt="" coords="5,56,92,83"/>
+<area shape="rect" id="node2" href="$CalcFunctions_8c.html#a63e6e01501817a283f88c47781f2a6e8" title="Zaznacza, że na wejściu został podany błędny wielomian i czyści pamięć poświęconą na tworzenie wielom..." alt="" coords="161,5,236,32"/>
+<area shape="rect" id="node3" href="$CalcFunctions_8c.html#a6bb8fdb8a951b3849409dfecfa64a498" title="Sprawdza, czy znak jest cyfrą." alt="" coords="164,56,233,83"/>
+<area shape="rect" id="node4" href="$poly_8h.html#aac5948dc82c3a64c55c60831991f7864" title="Tworzy wielomian, który jest współczynnikiem (wielomian stały)." alt="" coords="140,107,257,133"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="scanPoly" name="scanPoly">
+<area shape="rect" id="node1" title="Wczytuje wielomian z linii." alt="" coords="5,56,85,83"/>
+<area shape="rect" id="node2" href="$CalcFunctions_8c.html#a735f24f4a922448d74c64a72edff618c" title="Wczytuje wielomian z linii zakładając, że jest współczynnikiem." alt="" coords="137,5,224,32"/>
+<area shape="rect" id="node3" href="$CalcFunctions_8c.html#aecfc03b0ffd18b44d68ce746f7b8d0f2" title="Wczytuje wielomian z linii zakładając, że składa się z jednomianów." alt="" coords="133,56,228,83"/>
+</map>

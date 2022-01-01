@@ -1,0 +1,14 @@
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/install.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/install/local.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/send_message.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/get_memory.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/unnamed_memory.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/send_message_no_inheritance.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/send_message_protected.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/unnamed_memory_protected.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/gifts.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/err.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yannvoytaa/CLionProjects/lab10/cmake-build-debug/CMakeFiles/rebuild_cache.dir
